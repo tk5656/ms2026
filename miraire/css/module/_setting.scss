@@ -1,0 +1,49 @@
+@use "_variable.scss" as *;
+// サイト共通で必要になる設定値を変数で定義する
+
+// //ブレイクポイント
+// $breakPointList: 767px, 768px;
+
+// //メディアクエリ
+// $mq: (
+//   'sp': 'screen and (max-width: #{nth($breakPointList, 1)})',
+//   'pc': 'print,screen and (min-width: #{nth($breakPointList, 2)})'
+// ) !default;
+
+// //画像格納ディレクトリ
+// $imgDir: '/img/';
+
+// //PCレイアウト時の最小横幅
+// $minPcContentWidth: 1000px;
+
+// //SP
+// @media screen and (max-width: #{nth($breakPointList, 1)}){
+//   body{
+//     min-width: 320px;
+//   }
+//   html, body{
+//     height: 100%;
+//     min-height: 100%;
+//   }
+// }
+
+// //PC
+// @media print,screen and (min-width: #{nth($breakPointList, 2)}){
+//   body{
+//     width: 100%;
+//   }
+// }
+
+// //SP 非表示にする
+// @media screen and (max-width: #{nth($breakPointList, 1)}){
+//   ._pc{
+//     display: none;
+//   }
+// }
+
+// //PC 非表示にする
+// @media print,screen and (min-width: #{nth($breakPointList, 2)}){
+//   ._sp{
+//     display: none;
+//   }
+// }

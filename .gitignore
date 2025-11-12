@@ -1,4 +1,29 @@
+# OS生成ファイル
+.DS_Store
+Thumbs.db
+
+# ビルドされたcss等
+*.css
+*.css.map
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
+# 例外設定
+# logs/*
+!css/destyle.css
+
+# 環境設定ファイル
+.env
+
+# 一時ファイルやキャッシュ
+*.log
+*.tmp
+*.bak
+*.cache
+
+# データベースダンプ等
+*.sql
+
+# リファレンス
+reference/

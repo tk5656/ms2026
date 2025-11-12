@@ -1,0 +1,8 @@
+@charset "utf-8";
+// サイト全体に共通するスタイルの読み込み
+
+// scssファイルの読み込み
+@use "module/_setting.scss";
+@use "module/_header.scss";
+@use "module/_hamburger.scss";
+@use "module/_footer.scss";
