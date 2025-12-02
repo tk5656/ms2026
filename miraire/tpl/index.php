@@ -15,8 +15,7 @@
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-
+    <h1>hello</h1>
     <!-- JS -->
     <!-- <script src="js/script.js"></script> -->
 </body>
