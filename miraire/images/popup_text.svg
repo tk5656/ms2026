@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583.47 498.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffad36;
+      }
+
+      .cls-2 {
+        font-size: 30px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        font-weight: 800;
+      }
+
+      .cls-2, .cls-5 {
+        font-family: VDL-LogoJrBlack-Black-90ms-RKSJ-H, VDL-LogoJrBlack;
+      }
+
+      .cls-2, .cls-5, .cls-6 {
+        fill: #303030;
+      }
+
+      .cls-7 {
+        letter-spacing: -.25em;
+      }
+
+      .cls-3, .cls-8 {
+        fill: #4c4c4c;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: SourceHanSansJP-Heavy-90ms-RKSJ-H, 'Source Han Sans JP';
+      }
+
+      .cls-3, .cls-4, .cls-9 {
+        font-size: 20px;
+      }
+
+      .cls-10 {
+        stroke: #4c4c4c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5.03px;
+      }
+
+      .cls-10, .cls-11, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-12 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        font-size: 50px;
+      }
+
+      .cls-6 {
+        font-family: HiraKakuProN-W6-90ms-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+      }
+
+      .cls-13 {
+        font-size: 29px;
+      }
+
+      .cls-14 {
+        letter-spacing: -.5em;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <g>
+      <g>
+        <rect class="cls-10" x="2.52" y="23.42" width="544.22" height="472.12"/>
+        <g>
+          <polygon class="cls-10" points="2.52 23.42 546.73 23.42 580.95 2.52 36.74 2.52 2.52 23.42"/>
+          <polygon class="cls-10" points="546.73 495.54 580.95 445.93 580.95 2.52 546.73 23.42 546.73 495.54"/>
+        </g>
+      </g>
+      <g>
+        <text class="cls-5" transform="translate(149.62 165.24)"><tspan x="0" y="0">この公約で</tspan><tspan x="-75" y="60.8">よろしいですか？</tspan></text>
+        <text class="cls-6" transform="translate(207.12 279.14)"><tspan class="cls-9"><tspan x="0" y="0">選択中の公約</tspan><tspan class="cls-7" x="120" y="0">：</tspan></tspan><tspan class="cls-13"><tspan x="-92" y="49.78">「〇〇〇〇〇〇〇〇〇</tspan><tspan class="cls-14" x="198" y="49.78">」</tspan></tspan><tspan class="cls-9"><tspan x="24.17" y="83.72">〇〇 〇〇</tspan></tspan></text>
+        <text class="cls-2" transform="translate(233.37 96.46)"><tspan x="0" y="0">確認</tspan><tspan class="cls-7" x="60" y="0">：</tspan></text>
+        <g>
+          <g>
+            <rect class="cls-1" x="113.71" y="410.86" width="141.3" height="45.85" rx="22.92" ry="22.92"/>
+            <text class="cls-4" transform="translate(144.56 442.11)"><tspan x="0" y="0">投</tspan><tspan class="cls-12" x="20" y="0">票</tspan><tspan x="39.6" y="0">する</tspan></text>
+          </g>
+          <g>
+            <g>
+              <path class="cls-11" d="M310.1,455.96c-12.23,0-22.17-9.95-22.17-22.17s9.95-22.17,22.17-22.17h109.38c12.23,0,22.17,9.95,22.17,22.17s-9.95,22.17-22.17,22.17h-109.38Z"/>
+              <path class="cls-8" d="M419.47,412.36c11.81,0,21.42,9.61,21.42,21.42s-9.61,21.42-21.42,21.42h-109.38c-11.81,0-21.42-9.61-21.42-21.42s9.61-21.42,21.42-21.42h109.38M419.47,410.86h-109.38c-12.66,0-22.92,10.26-22.92,22.92s10.26,22.92,22.92,22.92h109.38c12.66,0,22.92-10.26,22.92-22.92s-10.26-22.92-22.92-22.92h0Z"/>
+            </g>
+            <text class="cls-3" transform="translate(314.79 442.11)"><tspan x="0" y="0">選びなおす</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

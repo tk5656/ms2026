@@ -15,8 +15,18 @@
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>hello</h1>
+    <header>
+        <img src="./images/header_logo.svg" alt="ミライレのロゴ">
+        <nav>
+            <ul>
+                <li>About</li>
+                <li>News</li>
+                <li>Chera</li>
+            </ul>
+        </nav>
+    </header>
     <!-- JS -->
+     <script src="main.js"></script>
     <!-- <script src="js/script.js"></script> -->
 </body>
 </html>

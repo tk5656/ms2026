@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.7 148.6">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        stroke: #303030;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        fill: #303030;
+        font-family: VDL-LogoJrBlack-Black-90ms-RKSJ-H, VDL-LogoJrBlack;
+        font-size: 43.82px;
+        font-weight: 800;
+        glyph-orientation-vertical: 0deg;
+        text-orientation: upright;
+        writing-mode: tb;
+      }
+
+      .cls-2 {
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <g>
+      <g>
+        <rect class="cls-2" x="2" y="19.04" width="125.33" height="127.56"/>
+        <g>
+          <polygon class="cls-2" points="2 19.04 127.33 19.04 151.7 2 26.37 2 2 19.04"/>
+          <polygon class="cls-2" points="127.33 146.6 151.7 125.22 151.7 2 127.33 19.04 127.33 146.6"/>
+        </g>
+      </g>
+      <text class="cls-3" transform="translate(64.67 39)"><tspan x="0" y="0">投票</tspan></text>
+      <line class="cls-1" x1="51.6" y1="10.52" x2="97.88" y2="10.52"/>
+    </g>
+  </g>
+</svg>
