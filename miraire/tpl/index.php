@@ -29,8 +29,7 @@
         <img class="vote" src="./images/header_box.svg" alt="投票箱">
     </header>
     <main>
-        <section class="">
-
+        <section class="top">
         </section>
     </main>
     <!-- JS -->

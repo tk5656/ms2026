@@ -25,7 +25,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
     img.logo{
         width: 200px;
     }
@@ -42,8 +41,7 @@ header{
     }
     img.vote{
         width: 120px;
-        position: relative;
-        top: 1rem;
+        margin-top: 2rem;
     }
 }
 // *{

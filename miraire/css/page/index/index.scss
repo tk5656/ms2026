@@ -1,2 +1,9 @@
 @use "../../module/variable" as *;
 // ページ単体に適用するスタイル
+section.top{
+    background-image: url(../../../images/top_samune.svg);
+    height: 100vh;
+}
+// *{
+//     border: 1px solid red;
+// }
