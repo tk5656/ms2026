@@ -28,6 +28,11 @@
         </nav>
         <img class="vote" src="./images/header_box.svg" alt="投票箱">
     </header>
+    <main>
+        <section class="">
+
+        </section>
+    </main>
     <!-- JS -->
     <!-- <script src="js/script.js"></script> -->
 </body>
