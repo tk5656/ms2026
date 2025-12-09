@@ -28,7 +28,7 @@
                 <li>Chera<span>公約・キャラクター</span></li>
             </ul>
         </nav>
-        <img class="vote" src="./images/header_box.svg" alt="投票箱">
+        <img class="vote" src="./images/header_box.png" alt="投票箱">
     </header>
     <main>
         <section class="top">
