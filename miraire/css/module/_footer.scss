@@ -1,1 +1,29 @@
 @use "_variable.scss" as *;
+
+footer{
+    background-color: $bgColorWhite;
+    position: sticky;
+    bottom: 0;
+    padding: 0 3%;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    img.logo{
+        width: 200px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+    img.sns{
+        width: 120px;
+        margin-top: 2rem;
+        z-index: 1;
+    }
+}
+// *{
+//     border: 1px solid red;
+// }

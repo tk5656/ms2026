@@ -1,8 +1,118 @@
 @use "../../module/variable" as *;
 // ページ単体に適用するスタイル
+// 文字設定
+section.about{
+    div.text-area{
+        h2{
+            font-size: 3.3rem;
+            font-weight: bold;
+            color: $White;
+        }
+        p.catchcopy{
+            font-size: 1.4rem;
+            font-weight: bold;
+            line-height: 1.3;
+            color: $White;
+        }
+        p.text{
+            color: $White;
+        }
+        p.link{
+            color: $Color1;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+    }
+}
+section.explanation{
+    div.contents{
+        div.item{
+            h3{
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 0.9rem;
+                color: $gray;
+            }
+        }
+    }
+    p.link{
+        color: $White;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+}
+
+// レイアウト
 section.top{
-    background-image: url(../../../images/top_samune.svg);
-    height: 100vh;
+    img{
+        width: 100vw;
+    }
+}
+
+section.about{
+    background-image: url(../../../images/about_img.png);
+    background-repeat: none;
+    background-size: cover;
+    div.text-area{
+        width: 300px;
+        margin: 0 5rem;
+        padding: 10rem 0;
+        h2{
+            margin-bottom: 1em;
+        }
+        p.catchcopy{
+            margin-bottom: 1.8em;
+        }
+        p.text{
+            margin-bottom: 2.5em;
+        }
+        p.link{
+            text-align: center;
+            a{
+                padding: 0.8em 1em;
+                background-color: $bgColorWhite;
+                border-radius: 25px;
+            }
+        }
+    }
+}
+
+section.explanation{
+    padding: 6rem 0;
+    div.contents{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+        div.item{
+            width: 30%;
+            
+            img{
+                width: 100%;
+                height: 250px;
+                border-radius: 25px;
+                background-color: rgb(159, 159, 159);
+                margin-bottom: 2rem;
+            }
+            h3{
+                text-align: center;
+                margin-bottom: 1em;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    p.link{
+        text-align: center;
+        a{
+            padding: 0.8em 1em;
+            background-color: $Color1;
+            border-radius: 25px;
+        }
+    }
 }
 // *{
 //     border: 1px solid red;

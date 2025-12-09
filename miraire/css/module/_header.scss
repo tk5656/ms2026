@@ -19,6 +19,8 @@ header{
 // headerのスタイル設定
 header{
     background-color: $bgColorWhite;
+    position: sticky;
+    top: 0;
     padding: 0 3%;
     width: 100vw;
     height: 100px;
@@ -42,6 +44,7 @@ header{
     img.vote{
         width: 120px;
         margin-top: 2rem;
+        z-index: 1;
     }
 }
 // *{
