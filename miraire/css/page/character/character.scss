@@ -10,6 +10,13 @@
     height: calc(100vh - $headerHeight - $footerHeight); // ヘッダーとフッターの間の高さ
 }
 
+.swiper-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .swiper-slide{
     width: 100%;
     height: 100%;
