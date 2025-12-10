@@ -23,9 +23,9 @@
         </h1>
         <nav>
             <ul>
-                <li>About<span>本展示について</span></li>
-                <li>News<span>最新情報</span></li>
-                <li>Chera<span>公約・キャラクター</span></li>
+                <li><a href="#about">About<span>本展示について</span></a></li>
+                <li><a href="">News<span>最新情報</span></a></li>
+                <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
             </ul>
         </nav>
         <img class="vote" src="./images/header_box.png" alt="投票箱">
@@ -34,7 +34,7 @@
         <section class="top">
             <img src="./images/top_samune.png" alt="">
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="text-area">
                 <h2>About</h2>
                 <p class="catchcopy">投票体験そのものを<br>今よりもっと楽しく。</p>

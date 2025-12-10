@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/destyle.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Adobe fonts -->
+    <script src="./js/Adobe_fonts.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b7038e28dd.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/page/character/character.css">
@@ -15,9 +21,72 @@
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <h1>
+            <img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="./index.php#about">About<span>本展示について</span></a></li>
+                <li><a href="">News<span>最新情報</span></a></li>
+                <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
+            </ul>
+        </nav>
+        <img class="vote" src="./images/header_box.png" alt="投票箱">
+    </header>
+    <main>
+        <div class="main_inner">
+            <!-- Swiper -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_item">
+                            <p><img src="./images/character/chara_penji.png" alt="雪原ぺん次の紹介画像"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_item">
+                            <p><img src="./images/character/chara_nyoroaki.png" alt="虹宮にょろ明の紹介画像"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_item">
+                            <p><img src="./images/character/chara_kokezo.png" alt="鳥谷こけ蔵の紹介画像"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_item">
+                            <p><img src="./images/character/chara_ichiro.png" alt="犬山いち郎の紹介画像"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_item">
+                            <p><img src="./images/character/chara_nyamiko.png" alt="猫川にゃみ子の紹介画像"></p>
+                        </div>
+                    </div>
+                </div><!-- /swiper-wrapper -->  
+                <!-- navigation buttons -->
+                <div class="btn_wrapper">
+                    <div class="swiper-button-prev"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="swiper-button-next"><i class="fa-solid fa-caret-right"></i></div>
+                </div>
+            </div><!-- /swiper -->
+        </div><!-- /main_inner -->
 
+    </main>
+    <footer>
+        <img class="logo" src="../images/hooter_logo.png" alt="">
+        <ul>
+            <li><a href="">本展示について</a></li>
+            <li><a href="">公約・キャラクター</a></li>
+            <li><a href="">最新情報</a></li>
+        </ul>
+        <img class="sns" src="../images/hooter_SNS.png" alt="">
+    </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JS -->
-    <!-- <script src="js/script.js"></script> -->
+    <script src="./js/swiper.js"></script>
 </body>
 </html>
