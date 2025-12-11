@@ -1,1 +1,19 @@
 @use "_variable.scss" as *;
+
+// 暗 → 明
+.opacity_up{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.opacity_up:hover{
+    opacity: 1;
+}
+
+// 明 → 暗
+.opasity_down{
+    opacity: 1;
+    transition: 0.3s;
+}
+.opasity_down:hover{
+    opacity: 0.5;
+}
