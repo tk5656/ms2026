@@ -43,7 +43,9 @@ header{
     }
     img.vote{
         width: 120px;
-        margin-top: 2rem;
+        position: absolute;
+        top: 0.5rem;
+        right: 3%;
     }
 }
 // *{
