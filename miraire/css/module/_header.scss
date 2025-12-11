@@ -25,10 +25,15 @@ header{
     width: 100vw;
     height: $headerHeight;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     img.logo{
         width: 200px;
+        position: absolute;
+        top: 50px;
+        transform: translateY(-50%);
+        left: 3%;
+        z-index: 5;
     }
     nav{
         ul{
@@ -43,7 +48,10 @@ header{
     }
     img.vote{
         width: 120px;
-        margin-top: 2rem;
+        position: absolute;
+        top: 1rem;
+        right: 3%;
+        z-index: 5;
     }
 }
 // *{
