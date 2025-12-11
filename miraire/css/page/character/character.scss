@@ -1,44 +1,68 @@
 @use "../../module/variable" as *;
+@use "../../module/animation" as *;
 // ページ単体に適用するスタイル
+// stickyの打ち消し
+header,footer{
+    position: static;
+}
+// 画面レイアウト
+html,
+body,
+#container{
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+}
+#container{
+    display: grid;
+    grid-template-rows: $headerHeight 1fr $footerHeight;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
 
 // Swiper
 // Swiper本体
 .swiper{
-    position: relative;
-    z-index: 0; // ヘッダー・フッターより後ろに配置
     width: 100%;
-    height: calc(100vh - $headerHeight - $footerHeight); // ヘッダーとフッターの間の高さ
+    height: 100%;
+}
+.swiper-wrapper,
+.swiper-slide,
+.slide_item{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.swiper-wrapper{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slide_item1{
+    background-image: url(../../../images/character/chara_penji.png);
 }
-.swiper-slide{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    .slide_item{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        img{
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: auto;
-            object-fit: contain; // 画像のアスペクト比を保持しながら表示
-        }
-    }
+.slide_item2{
+    background-image: url(../../../images/character/chara_nyoroaki.png);
+}
+.slide_item3{
+    background-image: url(../../../images/character/chara_kokezo.png);
+}
+.slide_item4{
+    background-image: url(../../../images/character/chara_ichiro.png);
+}
+.slide_item5{
+    background-image: url(../../../images/character/chara_nyamiko.png);
 }
 
 // navigation buttons
@@ -50,10 +74,13 @@
     content: ''; 
 }
 .btn_wrapper{
+    display: block;
     position: absolute;
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
+    width: fit-content;
+    margin: 0 auto;
     z-index: 5; // スライドの上に表示されるように
     display: flex;
     justify-content: center;
@@ -61,18 +88,19 @@
     gap: 2rem;
 }
 .swiper-button-prev,.swiper-button-next{
-    position: relative;
-    box-sizing: border-box;
+    display: inline-block;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: $White;
     color: $Black;
     border: 1px solid $Black;
-    /* :hover */
-    opacity: 0.7;
-    transition: 0.3s;
-}
-.swiper-button-prev:hover,.swiper-button-next:hover{
-    opacity: 1;
+    position: relative;
+
+    i{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
