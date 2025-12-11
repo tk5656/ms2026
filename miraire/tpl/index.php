@@ -6,15 +6,11 @@
     <title>TOP</title>
     <!-- destyle CSS -->
     <link rel="stylesheet" href="css/destyle.css">
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
     <!-- Adobe fonts -->
      <script src="./js/Adobe_fonts.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/page/index/index.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -75,7 +71,5 @@
         </ul>
         <img class="sns" src="../images/hooter_SNS.png" alt="">
     </footer>
-    <!-- JS -->
-    <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
