@@ -1,41 +1,10 @@
 @use "_variable.scss" as *;
-// @mixin _btn{
-//   //サイト共通ボタンのスタイル
-// }
-// .header{
-//   &-btn{
-//     @include _btn;
-//   }
-// }
-// .sec{
-//   &-btn{
-//     @include _btn;
-//   }
-// }
-// // 複数ボタンがある場合
-// $initType: 'normal';
-// @mixin _btn($type:$initType){
 
-//   //共通スタイル
-
-//   //サイト共通ボタンのスタイル　1
-//   @if( $type == 'normal' ){
-//     //スタイル
-//   }
-
-//   //サイト共通ボタンのスタイル　2
-//   @else if( $type == 'large' ){
-//     //スタイル
-//   }
-
-// }
-// .header{
-//   &-btn{
-//     @include _btn;
-//   }
-// }
-// .sec{
-//   &-btn{
-//     @include _btn('large');
-//   }
-// }
+p.btn{
+    text-align: center;
+    a{
+        padding: 0.8em 1em;
+        background-color: $Color1;
+        border-radius: 50%;
+    }
+}

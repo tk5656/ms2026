@@ -12,6 +12,77 @@
 </head>
 <body>
 
+    <div id="container">
+        <header>
+            <h1>
+                <img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.php#about">About<span>本展示について</span></a></li>
+                    <li><a href="">News<span>最新情報</span></a></li>
+                    <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
+                </ul>
+            </nav>
+            <img class="vote" src="./images/header_box.png" alt="投票箱">
+        </header>
+        <main>
+            <!-- Swiper -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_item slide_item1">
+                            <img src="./images/vote/isometric1.png" alt="">
+                            <p>公約1</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_item slide_item2">
+                            <img src="./images/vote/isometric2.png" alt="">
+                            <p>公約2</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_item slide_item3">
+                            <img src="./images/vote/isometric3.png" alt="">
+                            <p>公約3</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_item slide_item4">
+                            <img src="./images/vote/isometric4.png" alt="">
+                            <p>公約4</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_item slide_item5">
+                            <img src="./images/vote/isometric5.png" alt="">
+                            <p>公約5</p>
+                        </div>
+                    </div>
+                </div><!-- /swiper-wrapper -->  
+                <!-- navigation buttons -->
+                <div class="btn_wrapper">
+                    <div class="swiper-button-prev opacity_up"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="swiper-button-next opacity_up"><i class="fa-solid fa-caret-right"></i></div>
+                </div>
+            </div><!-- /swiper -->
+        </main>
+        <footer>
+            <img class="logo" src="./images/hooter_logo.png" alt="">
+            <ul>
+                <li><a href="">本展示について</a></li>
+                <li><a href="">公約・キャラクター</a></li>
+                <li><a href="">最新情報</a></li>
+            </ul>
+            <img class="sns" src="./images/hooter_SNS.png" alt="">
+        </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="./js/swiper.js"></script>
 
 </body>
 </html>
