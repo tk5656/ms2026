@@ -1,13 +1,121 @@
 @charset "utf-8";
+@use "../../module/variable" as *;
+@use "../../module/animation" as *;
+@use "../../module/btn" as *;
+// ページ単体に適用するスタイル
+// stickyの打ち消し
+header,footer{
+    position: static;
+}
+// 画面レイアウト
+html,
+body,
+#container{
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+}
+#container{
+    display: grid;
+    grid-template-rows: $headerHeight 1fr $footerHeight;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
 
-// variable
+// Swiper
+// Swiper本体
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper,
+.swiper-slide,
+.slide_item{
+    width: 100%;
+    height: 100%;
+}
+.slide_item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-wrapper{
+    overflow: visible;
+}
+.swiper-slide{
+    width: 500px;
+}
+.slide_item{
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .text_wrapper{
+        p{
+            text-align: center;
+            font-family: "vdl-logojrblack", sans-serif;
+            font-size: 1.2rem;
+            font-weight: 500;
+            span{
+                font-size: 2rem;
+            }
+        }
+        button{
+            display: block;
+            margin: 0.6rem auto 1.8rem;
+        }
+    }
+}
 
+// navigation buttons
+// デフォルトの矢印を削除
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
+    content: ''; 
+}
+.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+    content: ''; 
+}
+.btn_wrapper{
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    margin: 0 auto;
+    z-index: 5; // スライドの上に表示されるように
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.swiper-button-prev,.swiper-button-next{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $White;
+    color: $Black;
+    border: 1px solid $Black;
+    position: relative;
 
-
-
-// typography
-
-
-
-
-// layout
+    i{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -24,7 +24,7 @@
                 <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
             </ul>
         </nav>
-        <a href="./vote.php"><img class="vote" src="./images/header_box.png" alt="投票箱"></a>
+        <a href=""><img class="vote" src="./images/header_box.png" alt="投票箱"></a>
     </header>
     <main>
         <section class="top">

@@ -1,10 +1,10 @@
 @use "_variable.scss" as *;
 
-p.btn{
+.btn_mainColor{
     text-align: center;
-    a{
-        padding: 0.8em 1em;
-        background-color: $Color1;
-        border-radius: 50%;
-    }
+    padding: 0.8em 1em;
+    color: $White;
+    font-weight: bold;
+    background-color: $Color1;
+    border-radius: 25px;
 }
