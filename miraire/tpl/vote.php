@@ -9,7 +9,7 @@
     <!-- Adobe fonts -->
     <script src="./js/Adobe_fonts.js"></script>
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b7038e28dd.js" crossorigin="anonymous"></script>
     <!-- CSS -->
@@ -83,10 +83,8 @@
                     </div>
                 </div><!-- /swiper-wrapper -->  
                 <!-- navigation buttons --> 
-                <div class="btn_wrapper">
-                    <div class="swiper-button-prev opacity_up"><i class="fa-solid fa-caret-left"></i></div>
-                    <div class="swiper-button-next opacity_up"><i class="fa-solid fa-caret-right"></i></div>
-                </div>
+                <div class="swiper-button-prev opacity_up"></div>
+                <div class="swiper-button-next opacity_up"></div>
             </div><!-- /swiper -->
         </main>
         <footer>
@@ -101,7 +99,7 @@
     </div>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- JS -->
     <script src="./js/swiper_vote.js"></script>
 

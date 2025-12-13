@@ -34,12 +34,17 @@ body,
         grid-area: footer;
     }
 }
+html{
+    overflow-x: hidden;
+}
 
 // Swiper
 // Swiper本体
 .swiper{
     width: 100%;
     height: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 .swiper-wrapper,
 .swiper-slide,
@@ -47,18 +52,17 @@ body,
     width: 100%;
     height: 100%;
 }
-.slide_item{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.swiper-wrapper{
-    overflow: visible;
-}
 .swiper-slide{
-    width: 500px;
+
+    &:not(.swiper-slide-active) {
+        .slide_item {
+            pointer-events: none;
+            opacity: 0.3;
+        }
+    }
 }
 .slide_item{
+
     img{
         width: 100%;
         height: auto;
@@ -69,13 +73,14 @@ body,
             font-family: "vdl-logojrblack", sans-serif;
             font-size: 1.2rem;
             font-weight: 500;
+            margin-bottom: 0.6rem;
             span{
                 font-size: 2rem;
             }
         }
         button{
             display: block;
-            margin: 0.6rem auto 1.8rem;
+            margin: 0 auto;
         }
     }
 }
@@ -88,34 +93,46 @@ body,
 .swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
     content: ''; 
 }
-.btn_wrapper{
-    display: block;
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
-    margin: 0 auto;
-    z-index: 5; // スライドの上に表示されるように
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
 .swiper-button-prev,.swiper-button-next{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+    display: grid;
+    place-content: center;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.swiper-button-prev::before, .swiper-button-next::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
     border-radius: 50%;
-    background-color: $White;
-    color: $Black;
-    border: 1px solid $Black;
-    position: relative;
-
-    i{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+    width: 1.2rem;
+    height: 1.2rem;
+    content: "";
+    border: solid $White;
+    border-width: 3px 3px 0 0;
+}
+.swiper-button-prev::after {
+    margin-left: 0.4rem;
+    transform: rotate(-135deg);
+}
+.swiper-button-next::after {
+    margin-right: 0.4rem;
+    transform: rotate(45deg);
+}
+.swiper-button-prev {
+    right: calc(100% - 8rem);
+}
+.swiper-button-next {   
+    left: calc(100% - 8rem);
 }
