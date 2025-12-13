@@ -82,6 +82,7 @@
                         </div>
                     </div>
                 </div><!-- /swiper-wrapper -->  
+                <!-- ボタンのレスポンシブ対応ができていない、階層を変更する必要あり -->
                 <!-- navigation buttons --> 
                 <div class="swiper-button-prev opacity_up"></div>
                 <div class="swiper-button-next opacity_up"></div>

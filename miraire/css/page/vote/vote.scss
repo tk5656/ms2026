@@ -68,6 +68,7 @@ html{
         height: auto;
     }
     .text_wrapper{
+        padding: 0.5rem;
         p{
             text-align: center;
             font-family: "vdl-logojrblack", sans-serif;
@@ -131,8 +132,8 @@ html{
     transform: rotate(45deg);
 }
 .swiper-button-prev {
-    right: calc(100% - 8rem);
+    right: 50%;
 }
 .swiper-button-next {   
-    left: calc(100% - 8rem);
+    left: 50%;
 }
