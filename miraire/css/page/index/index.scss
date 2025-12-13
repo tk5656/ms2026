@@ -55,10 +55,10 @@ section.about{
     background-image: url(../../../images/about_img.png);
     background-repeat: none;
     background-size: cover;
+    background-position: center;
     div.text-area{
-        width: 300px;
-        margin: 0 5rem;
-        padding: 10rem 0;
+        width: fit-content;
+        max-width: 300px;
         h2{
             margin-bottom: 1em;
         }
@@ -82,19 +82,22 @@ section.about{
 section.explanation{
     padding: 6rem 0;
     div.contents{
-        display: flex;
-        justify-content: center;
+        @media(769px <= width){
+            display: flex;
+            justify-content: center;
+        }
         gap: 1.5rem;
         margin-bottom: 4rem;
         div.item{
-            width: 30%;
-            // max-width: 300px;
+            width: 350px;
+            margin: 0 auto 2rem;
+            @media(769px <= width){
+                width: 30%;
+                margin: 0;
+            }
             img{
-                // height: 250px;
-                // width: 100%;
                 width: 100%;
                 aspect-ratio: 3/2;
-                // max-width: 350px;
                 border-radius: 25px;
                 background-color: rgb(159, 159, 159);
                 margin-bottom: 2rem;
