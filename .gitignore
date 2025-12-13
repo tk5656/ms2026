@@ -9,9 +9,9 @@ Thumbs.db
 *.css.map
 *.sass.map
 *.scss.map
+
 # 例外設定
 # logs/*
-!css/destyle.css
 
 # 環境設定ファイル
 .env
