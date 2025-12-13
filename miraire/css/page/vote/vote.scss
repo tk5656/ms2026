@@ -58,6 +58,8 @@ html{
         .slide_item {
             pointer-events: none;
             opacity: 0.3;
+            scale: 0.8;
+            // ここの自然なスケール変化はどうすればいいかわからない
         }
     }
 }
