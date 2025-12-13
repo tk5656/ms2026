@@ -63,13 +63,13 @@
         </section>
     </main>
     <footer>
-        <img class="logo" src="../images/hooter_logo.png" alt="">
+        <img class="logo" src="./images/hooter_logo.png" alt="">
         <ul>
             <li><a href="">本展示について</a></li>
             <li><a href="">公約・キャラクター</a></li>
             <li><a href="">最新情報</a></li>
         </ul>
-        <img class="sns" src="../images/hooter_SNS.png" alt="">
+        <img class="sns" src="./images/hooter_SNS.png" alt="">
     </footer>
 </body>
 </html>
