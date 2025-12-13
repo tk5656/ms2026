@@ -110,7 +110,10 @@
                 <p class="modal-pledge" id="modalPledge">「○○○○○○○○○」</p>
                 <p class="modal-character-name" id="modalCharacterName">○○ ○○</p>
                 <div class="modal-buttons">
-                    <button type="button" class="btn_mainColor opacity_down" id="confirmVoteBtn">投票する</button>
+                    <form action="../infographic/infographic.php" method="post">
+                        <input type="hidden" name="characterNum" id="characterNum" value="キャラクターナンバー">
+                        <button type="submit" class="btn_mainColor opacity_down" id="confirmVoteBtn">投票する</button>
+                    </form>
                     <button type="button" class="btn_cancel opacity_down" id="cancelVoteBtn">選びなおす</button>
                 </div>
             </div>

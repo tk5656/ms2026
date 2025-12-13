@@ -52,6 +52,7 @@ function voteModal(characterNum){
     console.log(characterNum);
     modalCharacterName.textContent = characterData[characterNum].name;
     modalPledge.textContent = `「${characterData[characterNum].pledge}」`;
+    characterNum.value = characterNum;
     modal.classList.add('is-active');
 }
 
