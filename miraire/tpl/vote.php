@@ -21,7 +21,7 @@
     <div id="container">
         <header>
             <h1>
-                <img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ">
+                <a href="./index.php"><img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
             </h1>
             <nav>
                 <ul>
@@ -41,7 +41,7 @@
                             <img src="./images/vote/isometric1.png" alt="">
                             <div class="text_wrapper">
                                 <p>選択中の公約：<br><span>雪原ペン次</span></p>
-                                <button class="btn_mainColor">このキャラに投票する</button>
+                                <button type="button" class="btn_mainColor">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                             <img src="./images/vote/isometric2.png" alt="">
                             <div class="text_wrapper">
                                 <p>選択中の公約：<br><span>虹宮ニョロ明</span></p>
-                                <button class="btn_mainColor">このキャラに投票する</button>
+                                <button type="button" class="btn_mainColor">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                             <img src="./images/vote/isometric3.png" alt="">
                             <div class="text_wrapper">
                                 <p>選択中の公約：<br><span>鳥谷コケ蔵</span></p>
-                                <button class="btn_mainColor">このキャラに投票する</button>
+                                <button type="button" class="btn_mainColor">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                             <img src="./images/vote/isometric4.png" alt="">
                             <div class="text_wrapper">
                                 <p>選択中の公約：<br><span>犬山イチ郎</span></p>
-                                <button class="btn_mainColor">このキャラに投票する</button>
+                                <button type="button" class="btn_mainColor">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                             <img src="./images/vote/isometric5.png" alt="">
                             <div class="text_wrapper">
                                 <p>選択中の公約：<br><span>猫川ニャミ子</span></p>
-                                <button class="btn_mainColor">このキャラに投票する</button>
+                                <button type="button" class="btn_mainColor">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
