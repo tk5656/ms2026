@@ -1,7 +1,7 @@
 @charset "utf-8";
 @use "../../module/variable" as *;
-@use "../../module/animation" as *;
 @use "../../module/btn" as *;
+@use "../../module/animation" as *;
 // ページ単体に適用するスタイル
 // stickyの打ち消し
 header,footer{
@@ -136,4 +136,117 @@ html{
 }
 .swiper-button-next {   
     left: 50%;
+}
+
+// モーダル
+.modal {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    
+    &.is-active {
+        display: block !important;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background-image: url(../../../images/vote/popup_boxonly.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.modal-body {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+.modal-title {
+    font-family: "vdl-logojrblack", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $Black;
+    margin-bottom: 1rem;
+}
+.modal-question {
+    font-family: "vdl-logojrblack", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $Black;
+    margin-bottom: 1rem;
+}
+.modal-label {
+    font-size: 1rem;
+    color: $Black;
+    margin-bottom: 0.5rem;
+}
+
+.modal-pledge {
+    font-family: "vdl-logojrblack", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $Black;
+    margin-bottom: 0.5rem;
+}
+
+.modal-character-name {
+    font-family: "vdl-logojrblack", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $Black;
+    margin-bottom: 2rem;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.btn_cancel {
+    text-align: center;
+    padding: 0.8em 1em;
+    color: $Color1;
+    font-weight: bold;
+    background-color: $White;
+    border: 2px solid $Color1;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 1;
+    &:hover{
+        opacity: 0.7;
+    }
 }

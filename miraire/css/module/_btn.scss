@@ -7,4 +7,9 @@
     font-weight: bold;
     background-color: $Color1;
     border-radius: 25px;
+    opacity: 1;
+    transition: 0.3s;
+    &:hover{
+        opacity: 0.7;
+    }
 }
