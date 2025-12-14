@@ -1,20 +1,13 @@
 @use "../../module/variable" as *;
 // ページ単体に適用するスタイル
 // 文字設定
-div.completion{
-    p{
-        font-size: 2rem;
-        font-family: "vdl-logojrblack", sans-serif;
-        color: $Black;
-    }
-}
 div.contents{
     div.completion-message{
         h2{
-            font-size: 3.3rem;
+            font-size: 3.5rem;
             font-family: "vdl-logojrblack", sans-serif;
             color: $Black;
-            letter-spacing: 0.3em;
+            letter-spacing: 0.4em;
         }
         div.text-area{
             p.election-title{
@@ -50,7 +43,7 @@ div.contents{
         }
         ul.detail{
             li{
-                color: $gray;
+                color: #A0A0A0;
                 font-size: 0.65rem;
             }
         }
@@ -65,48 +58,85 @@ div.contents{
 // レイアウト
 main{
     min-height: 100vh;
-    div.completion-message{
-        width: 250px;
-        margin-left: 100px;
-        h2{
-            text-align: center;
+    div.completion{
+        margin-left: 3%;
+        img{
+            width: 100px;
+            @media(1000px <= width){
+                width: 150px;
+            }
         }
-        div.text-area{
-            p.election-title{
+    }
+    div.contents{
+        max-width: 1280px;
+        @media(1000px <= width){
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div.isome-img{
+            width: calc(100vw - 320px - 6rem);
+            min-width: 350px;
+            background-color: aquamarine;
+            margin: 0 auto 2rem;
+            @media(1000px <= width){
+                margin: 0;
+            }
+        }
+        div.completion-message{
+            width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            @media(1000px <= width){
+                margin-left: 3rem;
+                margin-right: 0;
+            }
+            h2{
                 text-align: center;
-                margin-bottom: 1em;
             }
-            div.committee{
-                margin-bottom: 4em;
-                p.committee-name{
+            div.text-area{
+                p.election-title{
                     text-align: center;
+                    margin-bottom: 1em;
                 }
-            }
-            div.selected-pledge{
-                margin-bottom: 2rem;
-                h3{
+                div.committee{
+                    margin-bottom: 4em;
+                    p.committee-name{
+                        text-align: center;
+                    }
+                }
+                div.selected-pledge{
+                    margin-bottom: 2rem;
+                    h3{
+                        text-align: center;
+                    }
+                    p.pledge-title{
+                        text-align: center;
+                    }
+                    p.pledge-name{
+                        text-align: center;
+                    }
+                }
+                ul.detail{
+                    margin: 0 auto 4rem;
+                    width: 290px;
+                    li{
+                        list-style: disc;
+                    }
+                }
+                p.post{
                     text-align: center;
-                }
-                p.pledge-title{
-                    text-align: center;
-                }
-                p.pledge-name{
-                    text-align: center;
-                }
-            }
-            ul.detail{
-                margin-bottom: 4rem;
-                li{
-                    list-style: disc;
-                }
-            }
-            p.post{
-                a{
-                    background-color: $Black;
-                    padding: 0.5em 0.7em;
-                    border-radius: 25px;
+                    a{
+                        background-color: $Black;
+                        padding: 0.5em 0.7em;
+                        border-radius: 25px;
+                    }
                 }
             }
         }
     }
 }
+
+// *{
+//     border: 0.1px solid red;
+// }

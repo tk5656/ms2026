@@ -30,7 +30,7 @@
     </header>
     <main>
         <div class="completion">
-            <p>投票完了</p>
+            <img src="images/completion.png" alt="投票完了">
         </div>
         <div class="contents">
             <div class="isome-img">
