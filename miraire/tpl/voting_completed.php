@@ -10,7 +10,7 @@
      <script src="./js/Adobe_fonts.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/page/index/index.css">
+    <link rel="stylesheet" href="css/page/voting_completed/voting_completed.css">
 </head>
 <body>
     <header>
@@ -29,7 +29,35 @@
         </p>
     </header>
     <main>
-        
+        <div class="completion">
+            <p>投票完了</p>
+        </div>
+        <div class="contents">
+            <div class="isome-img">
+                <img src="" alt="アイソメの画像">
+            </div>
+            <div class="completion-message">
+                <h2>投票済証</h2>
+                <div class="text-area">
+                    <p class="election-title">第一回<br>HAL大阪改革総選挙</p>
+                    <div class="committee">
+                        <p class="committee-name">HAL大阪改革総選挙実行委員会</p>
+                        <img src="" alt="実行委員会のハンコ">
+                    </div>
+                    <div class="selected-pledge">
+                        <h3>投票済の公約：</h3>
+                        <p class="pledge-title">「教室に落書きし放題」</p>
+                        <p class="pledge-name">虹宮 ニョロ助</p>
+                    </div>
+                    <ul class="detail">
+                        <li>集計結果は月日に、こちらのWeb上で公開予定です。投票は一人につき一回のみとさせて頂きます。ご了承ください。</li>
+                        <li>投票がお済みで無い方への、演出のネタバレ等はご遠慮ください。</li>
+                        <li>当ホームページURLを、まだブースに訪れていない第三者に共有する行為はお控えください。</li>
+                    </ul>
+                    <p class="post"><a href="">投票結果をツイートする</a></p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-logo">

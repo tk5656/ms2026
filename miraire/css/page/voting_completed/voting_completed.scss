@@ -1,5 +1,112 @@
 @use "../../module/variable" as *;
 // ページ単体に適用するスタイル
 // 文字設定
+div.completion{
+    p{
+        font-size: 2rem;
+        font-family: "vdl-logojrblack", sans-serif;
+        color: $Black;
+    }
+}
+div.contents{
+    div.completion-message{
+        h2{
+            font-size: 3.3rem;
+            font-family: "vdl-logojrblack", sans-serif;
+            color: $Black;
+            letter-spacing: 0.3em;
+        }
+        div.text-area{
+            p.election-title{
+                color: $Black;
+                letter-spacing: 0.4em;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+        div.committee{
+            p.committee-name{
+                color: $Black;
+                font-size: 0.65rem;
+                letter-spacing: 0.3em;
+            }
+        }
+        div.selected-pledge{
+            h3{
+                color: $Black;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            p.pledge-title{
+                color: $Black;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+            p.pledge-name{
+                color: $Black;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+        ul.detail{
+            li{
+                color: $gray;
+                font-size: 0.65rem;
+            }
+        }
+        p.post{
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: $White;
+        }
+    }
+}
 
 // レイアウト
+main{
+    min-height: 100vh;
+    div.completion-message{
+        width: 250px;
+        margin-left: 100px;
+        h2{
+            text-align: center;
+        }
+        div.text-area{
+            p.election-title{
+                text-align: center;
+                margin-bottom: 1em;
+            }
+            div.committee{
+                margin-bottom: 4em;
+                p.committee-name{
+                    text-align: center;
+                }
+            }
+            div.selected-pledge{
+                margin-bottom: 2rem;
+                h3{
+                    text-align: center;
+                }
+                p.pledge-title{
+                    text-align: center;
+                }
+                p.pledge-name{
+                    text-align: center;
+                }
+            }
+            ul.detail{
+                margin-bottom: 4rem;
+                li{
+                    list-style: disc;
+                }
+            }
+            p.post{
+                a{
+                    background-color: $Black;
+                    padding: 0.5em 0.7em;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}
