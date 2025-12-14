@@ -1,76 +1,73 @@
 // キャラクター情報の配列
-// スライドの順序に対応: 0: 雪原ペン次, 1: 虹宮ニョロ明, 2: 鳥谷コケ蔵, 3: 犬山イチ郎, 4: 猫川ニャミ子
 const characterData = [
-    {
-        name: '雪原ペン次',
-        pledge: '○○○○○○○○○'
-    },
-    {
-        name: '虹宮ニョロ明',
-        pledge: '○○○○○○○○○'
-    },
-    {
-        name: '鳥谷コケ蔵',
-        pledge: '○○○○○○○○○'
-    },
-    {
-        name: '犬山イチ郎',
-        pledge: '○○○○○○○○○'
-    },
-    {
-        name: '猫川ニャミ子',
-        pledge: '○○○○○○○○○'
-    }
+    { name: '雪原ペン次', pledge: 'コンビニを学内に作る' },
+    { name: '虹宮ニョロ明', pledge: '教室に落書きし放題' },
+    { name: '鳥谷コケ蔵', pledge: '屋上にビアガーデンを作る' },
+    { name: '犬山イチ郎', pledge: '学内に屋内喫煙所を作る' },
+    { name: '猫川ニャミ子', pledge: 'ゲーミングルームを作る' }
 ];
 
-// DOM要素の取得
+// DOM要素を取得
 const modal = document.getElementById('voteModal');
+const voteCompleteModal = document.getElementById('voteCompleteModal');
+const voteCompleteImage = document.getElementById('voteCompleteImage');
 const modalCharacterName = document.getElementById('modalCharacterName');
 const modalPledge = document.getElementById('modalPledge');
-const confirmVoteBtn = document.getElementById('confirmVoteBtn');
+const characterNumInput = document.getElementById('characterNum');
 const cancelVoteBtn = document.getElementById('cancelVoteBtn');
-const voteButtons = document.querySelectorAll('.vote-btn');
-const modalOverlay = document.querySelector('.modal-overlay');
+const voteForm = document.getElementById('voteForm');
 
-// DOM要素の存在チェック
-if (!modal || !modalCharacterName || !modalPledge || !confirmVoteBtn || !cancelVoteBtn) {
-    console.error('モーダル関連のDOM要素が見つかりません');
-}
-
-// モーダルを閉じる関数
+// モーダルを閉じる
 function closeModal() {
-    if (modal) {
-        modal.classList.remove('is-active');
-    }
+    modal.classList.remove('is-active');
 }
 
-// 投票ボタンクリック時の処理
-function voteModal(characterNum){
-    // イベントの最初の処理（コンソール）
-    console.log("click");
-    // 引数（キャラクター番号）
-    console.log(characterNum);
+// 投票ボタンクリックで確認モーダルを表示
+function voteModal(characterNum) {
     modalCharacterName.textContent = characterData[characterNum].name;
     modalPledge.textContent = `「${characterData[characterNum].pledge}」`;
-    characterNum.value = characterNum;
+    characterNumInput.value = characterNum;
     modal.classList.add('is-active');
 }
 
-// 選びなおすボタンクリック時の処理
-if (cancelVoteBtn) {
-    cancelVoteBtn.addEventListener('click', closeModal);
-}
+// 選びなおすボタンでモーダルを閉じる
+cancelVoteBtn.addEventListener('click', closeModal);
 
-// オーバーレイクリック時の処理
-if (modalOverlay) {
-    modalOverlay.addEventListener('click', closeModal);
-}
-
-// 投票するボタンクリック時の処理（現時点では何もしない）
-if (confirmVoteBtn) {
-    confirmVoteBtn.addEventListener('click', function() {
-        // 将来的に投票処理を実装する場合はここに記述
-        // 例: 投票APIを呼び出す、モーダルを閉じるなど
-        // closeModal();
+// 投票するボタンで投票処理
+voteForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const characterNum = characterNumInput.value;
+    
+    // 投票を送信
+    fetch('./vote.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ characterNum: characterNum })
+    })
+    .then(response => response.json())
+    .then(data => {
+        // 確認モーダルを閉じる
+        closeModal();
+        
+        // 投票完了モーダルに画像を表示
+        voteCompleteImage.src = data.imagePath;
+        voteCompleteModal.classList.add('is-active');
+        
+        // 5秒後に投票完了ページに遷移
+        setTimeout(function() {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = './vote_result.php';
+            
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'characterNum';
+            input.value = characterNum;
+            
+            form.appendChild(input);
+            document.body.appendChild(form);
+            form.submit();
+        }, 5000);
     });
-}
+});
