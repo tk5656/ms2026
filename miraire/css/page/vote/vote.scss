@@ -252,3 +252,24 @@ html{
         opacity: 0.7;
     }
 }
+
+// 投票完了モーダル
+.modal-content-complete {
+    max-width: 600px;
+    padding: 0;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.modal-body-complete {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.vote-complete-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
