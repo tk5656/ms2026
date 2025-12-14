@@ -19,7 +19,7 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="#about">About<span>本展示について</span></a></li>
+                <li><a href="./index.php">About<span>本展示について</span></a></li>
                 <li><a href="">News<span>最新情報</span></a></li>
                 <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
             </ul>
@@ -64,8 +64,8 @@
             <img class="logo" src="./images/hooter_logo.png" alt="">
         </div>
         <ul>
-            <li><a href="">本展示について</a></li>
-            <li><a href="">公約・キャラクター</a></li>
+            <li><a href="./index.php">本展示について</a></li>
+            <li><a href="./character.html">公約・キャラクター</a></li>
             <li><a href="">最新情報</a></li>
         </ul>
         <div class="sns-link">

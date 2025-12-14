@@ -19,7 +19,7 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="#about">About<span>本展示について</span></a></li>
+                <li><a href="./index.php">About<span>本展示について</span></a></li>
                 <li><a href="">News<span>最新情報</span></a></li>
                 <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
             </ul>
@@ -48,17 +48,17 @@
                 <div class="item">
                     <img src="" alt="">
                     <h3>魅力的な動物たち</h3>
-                    <p>ここにはアピールポイント<br>の説明文などが<br>入ると思います。</p>
+                    <p>クセの強いキャラクターたちが、<br>それぞれの理想のHALを<br>思い描いて登場します。</p>
                 </div>
                 <div class="item">
                     <img src="" alt="">
                     <h3>未来の姿を可視化</h3>
-                    <p>ここにはアピールポイント<br>の説明文などが<br>入ると思います。</p>
+                    <p>アイソメトリック図法を用いて、<br>それぞれが抱く未来の姿を<br>一目でイメージすることが出来ます。</p>
                 </div>
                 <div class="item">
                     <img src="" alt="">
-                    <h3>あと何か</h3>
-                    <p>ここにはアピールポイント<br>の説明文などが<br>入ると思います。</p>
+                    <h3>あなたが最後のピースに</h3>
+                    <p>一票を投じるごとに、<br>様々な形でアイソメが変化し、<br>未来の姿に近づいていきます。</p>
                 </div>
             </div>
             <p class="link"><a href="">現在の投票状況</a></p>
@@ -69,8 +69,8 @@
             <img class="logo" src="./images/hooter_logo.png" alt="">
         </div>
         <ul>
-            <li><a href="">本展示について</a></li>
-            <li><a href="">公約・キャラクター</a></li>
+            <li><a href="./index.php">本展示について</a></li>
+            <li><a href="./character.html">公約・キャラクター</a></li>
             <li><a href="">最新情報</a></li>
         </ul>
         <div class="sns-link">
