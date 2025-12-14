@@ -62,6 +62,7 @@ header{
         img.vote-img{
             width: 70px;
             position: relative;
+            z-index: 2;
             @media(769px <= width){
                 width: 120px;
                 top: 1.5rem;
