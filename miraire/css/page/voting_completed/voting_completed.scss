@@ -57,6 +57,10 @@ div.contents{
 
 // レイアウト
 main{
+    background-image: url(../../../images/bg.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
     min-height: 100vh;
     div.completion{
         margin-left: 3%;
@@ -100,9 +104,16 @@ main{
                     margin-bottom: 1em;
                 }
                 div.committee{
+                    display: flex;
+                    justify-content: space-between;
                     margin-bottom: 4em;
                     p.committee-name{
                         text-align: center;
+                        margin-left: 4rem;
+                    }
+                    img{
+                        width: 3rem;
+                        right: 0;
                     }
                 }
                 div.selected-pledge{

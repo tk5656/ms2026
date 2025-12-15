@@ -42,7 +42,7 @@
                     <p class="election-title">第一回<br>HAL大阪改革総選挙</p>
                     <div class="committee">
                         <p class="committee-name">HAL大阪改革総選挙実行委員会</p>
-                        <img src="" alt="実行委員会のハンコ">
+                        <img src="images/kanryo_hanko.png" alt="実行委員会のハンコ">
                     </div>
                     <div class="selected-pledge">
                         <h3>投票済の公約：</h3>
