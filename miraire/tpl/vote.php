@@ -110,7 +110,7 @@
                 <p class="modal-pledge" id="modalPledge">「○○○○○○○○○」</p>
                 <p class="modal-character-name" id="modalCharacterName">○○ ○○</p>
                 <div class="modal-buttons">
-                    <form id="voteForm" action="../vote/vote.php" method="post">
+                    <form id="voteForm" method="post">
                         <input type="hidden" name="characterNum" id="characterNum" value="キャラクターナンバー">
                         <button type="submit" class="btn_mainColor opacity_down" id="confirmVoteBtn">投票する</button>
                     </form>
@@ -125,7 +125,11 @@
         <div class="modal-overlay"></div>
         <div class="modal-content modal-content-complete">
             <div class="modal-body-complete">
-                <img id="voteCompleteImage" src="" alt="投票完了" class="vote-complete-image">
+                <div class="vote-animation-container">
+                    <img id="voteBeforeImage" src="" alt="投票前" class="vote-complete-image vote-before-image">
+                    <img id="voteAfterImage" src="" alt="投票後" class="vote-complete-image vote-after-image">
+                    <img id="votePartsImage" src="" alt="パーツ" class="vote-complete-image vote-parts-image">
+                </div>
             </div>
         </div>
     </div>
