@@ -15,7 +15,7 @@
 <body>
     <header>
         <h1>
-            <img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ">
+            <a href="./index.php"><img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
         </h1>
         <nav>
             <ul>
@@ -40,7 +40,7 @@
                     各公約ごとに個性溢れるキャラクターたちが登場し、あなたの投票体験をより楽しいものにします。<br>
                     また、投票ごとに選んだ公約の建物の様子が変化し、一票の大切さをより実感できる展示となっています。
                 </p>
-                <p class="link"><a href="">公約・キャラクターを見る</a></p>
+                <p class="link"><a href="./character.html">公約・キャラクターを見る</a></p>
             </div>
         </section>
         <section class="explanation">
