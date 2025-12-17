@@ -30,7 +30,7 @@
                     <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
                 </ul>
             </nav>
-            <img class="vote" src="./images/header_box.png" alt="投票箱">
+            <a href="./vote.php"><img class="vote" src="./images/header_box.png" alt="投票箱"></a>
         </header>
         <main>
             <!-- Swiper -->
@@ -99,7 +99,7 @@
         </footer>
     </div>
 
-    <!-- モーダル -->
+    <!-- 確認モーダル -->
     <div id="voteModal" class="modal">
         <div class="modal-overlay"></div>
         <div class="modal-content">
@@ -110,11 +110,25 @@
                 <p class="modal-pledge" id="modalPledge">「○○○○○○○○○」</p>
                 <p class="modal-character-name" id="modalCharacterName">○○ ○○</p>
                 <div class="modal-buttons">
-                    <form action="../infographic/infographic.php" method="post">
+                    <form id="voteForm" method="post">
                         <input type="hidden" name="characterNum" id="characterNum" value="キャラクターナンバー">
                         <button type="submit" class="btn_mainColor opacity_down" id="confirmVoteBtn">投票する</button>
                     </form>
-                    <button type="button" class="btn_cancel opacity_down" id="cancelVoteBtn">選びなおす</button>
+                    <button type="button" class="btn_cancel" id="cancelVoteBtn">選びなおす</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 投票完了モーダル -->
+    <div id="voteCompleteModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-content-complete">
+            <div class="modal-body-complete">
+                <div class="vote-animation-container">
+                    <img id="voteBeforeImage" src="" alt="投票前" class="vote-complete-image vote-before-image">
+                    <img id="voteAfterImage" src="" alt="投票後" class="vote-complete-image vote-after-image">
+                    <img id="votePartsImage" src="" alt="パーツ" class="vote-complete-image vote-parts-image">
                 </div>
             </div>
         </div>
