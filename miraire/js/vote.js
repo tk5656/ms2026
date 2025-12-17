@@ -10,28 +10,21 @@ const characterData = [
 // DOM要素を取得
 const modal = document.getElementById('voteModal');
 const voteCompleteModal = document.getElementById('voteCompleteModal');
-<<<<<<< HEAD
-const voteCompleteImage = document.getElementById('voteCompleteImage');
-=======
 const voteBeforeImage = document.getElementById('voteBeforeImage');
 const voteAfterImage = document.getElementById('voteAfterImage');
 const votePartsImage = document.getElementById('votePartsImage');
->>>>>>> 2edc503df2b8a2aa8f180f706718e54b0098cfeb
 const modalCharacterName = document.getElementById('modalCharacterName');
 const modalPledge = document.getElementById('modalPledge');
 const characterNumInput = document.getElementById('characterNum');
 const cancelVoteBtn = document.getElementById('cancelVoteBtn');
 const voteForm = document.getElementById('voteForm');
 
-<<<<<<< HEAD
-=======
 // DOM要素が存在しない場合のチェック
 if (!modal || !voteCompleteModal || !voteBeforeImage || !voteAfterImage || !votePartsImage || 
     !modalCharacterName || !modalPledge || !characterNumInput || !cancelVoteBtn || !voteForm) {
     console.error('必要なDOM要素が見つかりません');
 }
 
->>>>>>> 2edc503df2b8a2aa8f180f706718e54b0098cfeb
 // モーダルを閉じる
 function closeModal() {
     modal.classList.remove('is-active');
@@ -39,21 +32,6 @@ function closeModal() {
 
 // 投票ボタンクリックで確認モーダルを表示
 function voteModal(characterNum) {
-<<<<<<< HEAD
-    modalCharacterName.textContent = characterData[characterNum].name;
-    modalPledge.textContent = `「${characterData[characterNum].pledge}」`;
-    characterNumInput.value = characterNum;
-    modal.classList.add('is-active');
-}
-
-// 選びなおすボタンでモーダルを閉じる
-cancelVoteBtn.addEventListener('click', closeModal);
-
-// 投票するボタンで投票処理
-voteForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-=======
     if (!modal || !modalCharacterName || !modalPledge || !characterNumInput) {
         console.error('モーダル表示に必要な要素が見つかりません');
         return;
@@ -82,7 +60,6 @@ if (voteForm) {
         return;
     }
     
->>>>>>> 2edc503df2b8a2aa8f180f706718e54b0098cfeb
     const characterNum = characterNumInput.value;
     
     // 投票を送信
@@ -91,34 +68,6 @@ if (voteForm) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ characterNum: characterNum })
     })
-<<<<<<< HEAD
-    .then(response => response.json())
-    .then(data => {
-        // 確認モーダルを閉じる
-        closeModal();
-        
-        // 投票完了モーダルに画像を表示
-        voteCompleteImage.src = data.imagePath;
-        voteCompleteModal.classList.add('is-active');
-        
-        // 5秒後に投票完了ページに遷移
-        setTimeout(function() {
-            const form = document.createElement('form');
-            form.method = 'POST';
-            form.action = './vote_result.php';
-            
-            const input = document.createElement('input');
-            input.type = 'hidden';
-            input.name = 'characterNum';
-            input.value = characterNum;
-            
-            form.appendChild(input);
-            document.body.appendChild(form);
-            form.submit();
-        }, 5000);
-    });
-});
-=======
     .then(response => {
         if (!response.ok) {
             throw new Error('投票の送信に失敗しました');
@@ -270,4 +219,3 @@ function startVoteAnimation(data, characterNum) {
         }
     }, 1500); // 最初の1.5秒待機
 }
->>>>>>> 2edc503df2b8a2aa8f180f706718e54b0098cfeb
