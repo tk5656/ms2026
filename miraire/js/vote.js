@@ -163,7 +163,7 @@ function startVoteAnimation(data, characterNum) {
                         setTimeout(function() {
                             const form = document.createElement('form');
                             form.method = 'POST';
-                            form.action = './vote_result.php';
+                            form.action = './voting_completed.php';
                             
                             const input = document.createElement('input');
                             input.type = 'hidden';
@@ -203,7 +203,7 @@ function startVoteAnimation(data, characterNum) {
                     setTimeout(function() {
                         const form = document.createElement('form');
                         form.method = 'POST';
-                        form.action = './vote_result.php';
+                        form.action = './voting_completed.php';
                         
                         const input = document.createElement('input');
                         input.type = 'hidden';

@@ -30,7 +30,7 @@
                     <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
                 </ul>
             </nav>
-            <a href="./vote.php"><a href="./vote.php"><img class="vote" src="./images/header_box.png" alt="投票箱"></a></a>
+            <a href="./vote.php"><img class="vote" src="./images/header_box.png" alt="投票箱"></a>
         </header>
         <main>
             <!-- Swiper -->

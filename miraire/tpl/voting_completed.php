@@ -15,7 +15,7 @@
 <body>
     <header>
         <h1>
-            <img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ">
+            <a href="./index.php"><img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
         </h1>
         <nav>
             <ul>
@@ -25,16 +25,16 @@
             </ul>
         </nav>
         <p class="vote">
-            <a href=""><img class="vote-img" src="./images/header_box.png" alt="投票箱"></a>
+            <a href="./vote.php"><img class="vote-img" src="./images/header_box.png" alt="投票箱"></a>
         </p>
     </header>
     <main>
         <div class="completion">
-            <img src="images/completion.png" alt="投票完了">
+            <img src="./images/completion.png" alt="投票完了">
         </div>
         <div class="contents">
             <div class="isome-img">
-                <img src="" alt="アイソメの画像">
+                <img src="<?php echo htmlspecialchars($isometricPath, ENT_QUOTES, 'UTF-8'); ?>" alt="アイソメの画像">
             </div>
             <div class="completion-message">
                 <h2>投票済証</h2>
@@ -42,12 +42,12 @@
                     <p class="election-title">第一回<br>HAL大阪改革総選挙</p>
                     <div class="committee">
                         <p class="committee-name">HAL大阪改革総選挙実行委員会</p>
-                        <img src="images/kanryo_hanko.png" alt="実行委員会のハンコ">
+                        <img src="./images/kanryo_hanko.png" alt="実行委員会のハンコ">
                     </div>
                     <div class="selected-pledge">
                         <h3>投票済の公約：</h3>
-                        <p class="pledge-title">「教室に落書きし放題」</p>
-                        <p class="pledge-name">虹宮 ニョロ助</p>
+                        <p class="pledge-title">「<?php echo htmlspecialchars($characterPledge, ENT_QUOTES, 'UTF-8'); ?>」</p>
+                        <p class="pledge-name"><?php echo htmlspecialchars($characterName, ENT_QUOTES, 'UTF-8'); ?></p>
                     </div>
                     <ul class="detail">
                         <li>集計結果は月日に、こちらのWeb上で公開予定です。投票は一人につき一回のみとさせて頂きます。ご了承ください。</li>
