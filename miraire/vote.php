@@ -3,13 +3,22 @@
 // 本番環境（ロリポップ等）: display_errors = '0'
 // 開発環境（XAMPP等）: display_errors = '1'
 error_reporting(E_ALL);
-ini_set('display_errors', '0'); // ロリポップサーバーでは0に設定
+// ★ローカル(XAMPP)では 1 にして詳細エラーを確認する
+ini_set('display_errors', '1');
 
 // データベース接続設定を読み込む
 require_once __DIR__ . '/config.php';
 
 // JSONリクエストかどうかを判定
-$isAjax = !empty($_SERVER['CONTENT_TYPE']) && strpos($_SERVER['CONTENT_TYPE'], 'application/json') !== false;
+// 一部の環境では CONTENT_TYPE ではなく HTTP_CONTENT_TYPE になる場合があるため両方を見る
+$contentType = '';
+if (!empty($_SERVER['CONTENT_TYPE'])) {
+    $contentType = $_SERVER['CONTENT_TYPE'];
+} elseif (!empty($_SERVER['HTTP_CONTENT_TYPE'])) {
+    $contentType = $_SERVER['HTTP_CONTENT_TYPE'];
+}
+
+$isAjax = !empty($contentType) && stripos($contentType, 'application/json') !== false;
 
 // JSONデータを受け取る
 $characterNum = null;

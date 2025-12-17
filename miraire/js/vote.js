@@ -107,14 +107,19 @@ function startVoteAnimation(data, characterNum) {
         console.error('アニメーションに必要な要素が見つかりません');
         return;
     }
-    // 初期状態：投票前の画像を表示
+    // 初期状態：投票前の画像をフェードイン表示
     voteBeforeImage.src = data.beforeImagePath;
     voteBeforeImage.style.display = 'block';
+    voteBeforeImage.style.opacity = '0';
     voteAfterImage.style.display = 'none';
     votePartsImage.style.display = 'none';
     votePartsImage.classList.remove('parts-falling');
+    // 少し待ってから不透明にして自然に表示
+    setTimeout(function() {
+        voteBeforeImage.style.opacity = '1';
+    }, 50);
     
-    // 2秒後にパーツが落ちてくるアニメーション
+    // 1.5秒後にパーツが落ちてくるアニメーション（少し速く）
     setTimeout(function() {
         if (data.partsPath) {
             votePartsImage.src = data.partsPath;
@@ -128,7 +133,7 @@ function startVoteAnimation(data, characterNum) {
                 votePartsImage.classList.add('parts-falling');
             }, 50);
             
-            // パーツが落ちた後（1.5秒後）、パーツをフェードアウト
+            // パーツが落ちた後（0.9秒後）、パーツをフェードアウト（少し速く）
             setTimeout(function() {
                 votePartsImage.style.transition = 'opacity 0.5s ease-out';
                 votePartsImage.style.opacity = '0';
@@ -173,9 +178,9 @@ function startVoteAnimation(data, characterNum) {
                         }, 3000);
                     }, 1600);
                 }, 500); // パーツがフェードアウトする時間
-            }, 1500); // パーツが落ちる時間（1.5秒）
+            }, 900); // パーツが落ちる時間（0.9秒）
         } else {
-            // パーツがない場合、2秒待機してから新しい画像のアニメーション開始
+            // パーツがない場合、1.5秒待機してから新しい画像のアニメーション開始
             setTimeout(function() {
                 // 投票後の画像を準備
                 voteAfterImage.src = data.afterImagePath;
@@ -212,7 +217,7 @@ function startVoteAnimation(data, characterNum) {
                         form.submit();
                     }, 3000);
                 }, 1600);
-            }, 2000); // 2秒待機（パーツがある場合と同じタイミング）
+            }, 1500); // 1.5秒待機（パーツがある場合と近いタイミング）
         }
-    }, 2000); // 最初の2秒待機
+    }, 1500); // 最初の1.5秒待機
 }
