@@ -3,7 +3,6 @@
 // headerの文字設定
 header{
     li{
-        text-align: center;
         font-size: 1.5rem;
         font-weight: bold;
         line-height: 1;
@@ -19,41 +18,57 @@ header{
 // headerのスタイル設定
 header{
     background-color: $bgColorWhite;
+    height: $headerHeight;
     position: sticky;
     top: 0;
-    padding: 0 3%;
-    width: 100vw;
-    height: $headerHeight;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img.logo{
-        width: 200px;
-        position: absolute;
-        top: 50px;
-        transform: translateY(-50%);
-        left: 3%;
-        z-index: 5;
+    @media(769px <= width){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 1rem;
+        @media(769px <= width){
+            margin-left: 3%;
+            text-align: start;
+        }
+        img.logo{
+            width: 180px;
+            @media(769px <= width){
+                width: 250px;
+            }
+        }
     }
     nav{
         ul{
             display: flex;
             justify-content: center;
-            align-items: center;
-            gap: 1.5em;
-            span{
-                display: block;
+            gap: 1em;
+            li{
+                span{
+                    display: block;
+                    text-align: center;
+                }
             }
         }
     }
-    img.vote{
-        width: 120px;
-        position: absolute;
-        top: 1rem;
-        right: 3%;
-        z-index: 5;
+    p.vote{
+        text-align: right;
+        margin-right: 3%;
+        @media(769px <= width){
+            text-align: start;
+        }
+        img.vote-img{
+            width: 70px;
+            position: relative;
+            @media(769px <= width){
+                width: 120px;
+                top: 1.5rem;
+            }
+        }
     }
 }
 // *{
-//     border: 1px solid red;
+//     border: 0.1px solid red;
 // }

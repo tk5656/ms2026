@@ -24,7 +24,9 @@
                 <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
             </ul>
         </nav>
-        <a href="./vote.php"><img class="vote" src="./images/header_box.png" alt="投票箱"></a>
+        <p class="vote">
+            <a href=""><img class="vote-img" src="./images/header_box.png" alt="投票箱"></a>
+        </p>
     </header>
     <main>
         <section class="top">
@@ -63,13 +65,17 @@
         </section>
     </main>
     <footer>
-        <img class="logo" src="./images/hooter_logo.png" alt="">
+        <div class="footer-logo">
+            <img class="logo" src="./images/hooter_logo.png" alt="">
+        </div>
         <ul>
             <li><a href="">本展示について</a></li>
             <li><a href="">公約・キャラクター</a></li>
             <li><a href="">最新情報</a></li>
         </ul>
-        <img class="sns" src="./images/hooter_SNS.png" alt="">
+        <div class="sns-link">
+            <img class="sns" src="./images/hooter_SNS.png" alt="">
+        </div>
     </footer>
 </body>
 </html>

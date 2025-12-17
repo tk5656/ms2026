@@ -268,8 +268,70 @@ html{
     text-align: center;
 }
 
+.vote-animation-container {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .vote-complete-image {
     width: 100%;
     height: auto;
     display: block;
+    max-width: 600px;
+}
+
+.vote-before-image {
+    // before / after 画像の位置を完全に揃えるため、両方 absolute & 中央寄せにする
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.vote-after-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    z-index: 2;
+    clip-path: inset(0 100% 0 0);
+    -webkit-clip-path: inset(0 100% 0 0);
+}
+
+.vote-parts-image {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 30% !important;
+    max-width: 30% !important;
+    max-height: 30% !important;
+    height: auto !important;
+    opacity: 0;
+    // パーツの落下速度を少し速く
+    transition: top 0.9s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease-in-out;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+.vote-parts-image.parts-falling {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
 }

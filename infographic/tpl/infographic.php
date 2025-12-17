@@ -9,99 +9,90 @@
     <link rel="stylesheet" href="./css/infographic.css">
 </head>
 <body>
-    <h1>現在の投票状況</h1>
     <div class="ranking">
         <div class="ranking-item">
-            <p class="number">1</p>
-            <div class="pledge-details">
-                <p class="pledge">ビヤガーデン公約仮仮仮仮仮仮</p>
-                <div>
-                    <p class="name">苗字コケゾウ</p>
-                    <p class="age">35歳</p>
+            <div class="pledge-item">
+                <p class="rank">1</p>
+                <p class="pledge-name">コンビニ</p>
+                <img src="images/character1.png" alt="キャラクターの画像">
+                <div class="text">
+                    <p class="catch-copy">ハッピーが一番</p>
+                    <p class="name">雪原ペン次<span>(40)</span></p>
                 </div>
             </div>
             <div class="gauge">
-                <div class="now-gauge"></div>
-            </div>
-        </div>
-        <div class="winning-border">
-            <p>当選</p>
-            <div></div>
-        </div>
-        <div class="ranking-item">
-            <p class="number">2</p>
-            <div class="pledge-details">
-                <p class="pledge">ビヤガーデン公約仮仮仮仮仮仮</p>
-                <div>
-                    <p class="name">苗字コケゾウ</p>
-                    <p class="age">35歳</p>
+                <div class="sector">
+                    <div class="now-gauge"></div>
                 </div>
-            </div>
-            <div class="gauge">
-                <div class="now-gauge"></div>
             </div>
         </div>
         <div class="ranking-item">
-            <p class="number">3</p>
-            <div class="pledge-details">
-                <p class="pledge">ビヤガーデン公約仮仮仮仮仮仮</p>
-                <div>
-                    <p class="name">苗字コケゾウ</p>
-                    <p class="age">35歳</p>
+            <div class="pledge-item">
+                <p class="rank">2</p>
+                <p class="pledge-name">コンビニ</p>
+                <img src="images/character1.png" alt="キャラクターの画像">
+                <div class="text">
+                    <p class="catch-copy">ハッピーが一番</p>
+                    <p class="name">雪原ペン次<span>(40)</span></p>
                 </div>
             </div>
             <div class="gauge">
-                <div class="now-gauge"></div>
+                <div class="sector">
+                    <div class="now-gauge"></div>
+                </div>
             </div>
         </div>
         <div class="ranking-item">
-            <p class="number">4</p>
-            <div class="pledge-details">
-                <p class="pledge">ビヤガーデン公約仮仮仮仮仮仮</p>
-                <div>
-                    <p class="name">苗字コケゾウ</p>
-                    <p class="age">35歳</p>
+            <div class="pledge-item">
+                <p class="rank">3</p>
+                <p class="pledge-name">コンビニ</p>
+                <img src="images/character1.png" alt="キャラクターの画像">
+                <div class="text">
+                    <p class="catch-copy">ハッピーが一番</p>
+                    <p class="name">雪原ペン次<span>(40)</span></p>
                 </div>
             </div>
             <div class="gauge">
-                <div class="now-gauge"></div>
+                <div class="sector">
+                    <div class="now-gauge"></div>
+                </div>
             </div>
         </div>
         <div class="ranking-item">
-            <p class="number">5</p>
-            <div class="pledge-details">
-                <p class="pledge">ビヤガーデン公約仮仮仮仮仮仮</p>
-                <div>
-                    <p class="name">苗字コケゾウ</p>
-                    <p class="age">35歳</p>
+            <div class="pledge-item">
+                <p class="rank">4</p>
+                <p class="pledge-name">コンビニ</p>
+                <img src="images/character1.png" alt="キャラクターの画像">
+                <div class="text">
+                    <p class="catch-copy">ハッピーが一番</p>
+                    <p class="name">雪原ペン次<span>(40)</span></p>
                 </div>
             </div>
             <div class="gauge">
-                <div class="now-gauge"></div>
+                <div class="sector">
+                    <div class="now-gauge"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ranking-item">
+            <div class="pledge-item">
+                <p class="rank">5</p>
+                <p class="pledge-name">コンビニ</p>
+                <img src="images/character1.png" alt="キャラクターの画像">
+                <div class="text">
+                    <p class="catch-copy">ハッピーが一番</p>
+                    <p class="name">雪原ペン次<span>(40)</span></p>
+                </div>
+            </div>
+            <div class="gauge">
+                <div class="sector">
+                    <div class="now-gauge"></div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="sub-content">
-        <div class="animation">
-        </div>
-        <p class="voting-status">投票<br>状況</p>
-        <div class="vote-count">
-            <div class="content">
-                <p class="count-num">00</p>
-            </div>
-            <div class="content">
-                <p class="count-num">00</p>
-            </div>
-            <div class="content">
-                <p class="count-num">00</p>
-            </div>
-            <div class="content">
-                <p class="count-num">00</p>
-            </div>
-            <div class="content">
-                <p class="count-num">00</p>
-            </div>
-        </div>
+    <div class="bottom-logo">
+        <img src="images/title_logo.svg" alt="ミライレのロゴ">
     </div>
 </body>
 </html>
