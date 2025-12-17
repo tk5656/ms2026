@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投票完了</title>
+    <!-- destyle CSS -->
+    <link rel="stylesheet" href="css/destyle.css">
+    <!-- Adobe fonts -->
+     <script src="./js/Adobe_fonts.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page/voting_completed/voting_completed.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="./index.php">About<span>本展示について</span></a></li>
+                <li><a href="">News<span>最新情報</span></a></li>
+                <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
+            </ul>
+        </nav>
+        <p class="vote">
+            <a href=""><img class="vote-img" src="./images/header_box.png" alt="投票箱"></a>
+        </p>
+    </header>
+    <main>
+        <div class="completion">
+            <img src="images/completion.png" alt="投票完了">
+        </div>
+        <div class="contents">
+            <div class="isome-img">
+                <img src="" alt="アイソメの画像">
+            </div>
+            <div class="completion-message">
+                <h2>投票済証</h2>
+                <div class="text-area">
+                    <p class="election-title">第一回<br>HAL大阪改革総選挙</p>
+                    <div class="committee">
+                        <p class="committee-name">HAL大阪改革総選挙実行委員会</p>
+                        <img src="images/kanryo_hanko.png" alt="実行委員会のハンコ">
+                    </div>
+                    <div class="selected-pledge">
+                        <h3>投票済の公約：</h3>
+                        <p class="pledge-title">「教室に落書きし放題」</p>
+                        <p class="pledge-name">虹宮 ニョロ助</p>
+                    </div>
+                    <ul class="detail">
+                        <li>集計結果は月日に、こちらのWeb上で公開予定です。投票は一人につき一回のみとさせて頂きます。ご了承ください。</li>
+                        <li>投票がお済みで無い方への、演出のネタバレ等はご遠慮ください。</li>
+                        <li>当ホームページURLを、まだブースに訪れていない第三者に共有する行為はお控えください。</li>
+                    </ul>
+                    <p class="post"><a href="">投票結果をツイートする</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img class="logo" src="./images/hooter_logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="./index.php">本展示について</a></li>
+            <li><a href="./character.html">公約・キャラクター</a></li>
+            <li><a href="">最新情報</a></li>
+        </ul>
+        <div class="sns-link">
+            <img class="sns" src="./images/hooter_SNS.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
