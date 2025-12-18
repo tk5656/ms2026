@@ -34,7 +34,7 @@
         </div>
         <div class="contents">
             <div class="isome-img">
-                <img src="<?php echo htmlspecialchars($isometricPath, ENT_QUOTES, 'UTF-8'); ?>" alt="アイソメの画像">
+                <img src="" alt="アイソメの画像">
             </div>
             <div class="completion-message">
                 <h2>投票済証</h2>
@@ -46,8 +46,8 @@
                     </div>
                     <div class="selected-pledge">
                         <h3>投票済の公約：</h3>
-                        <p class="pledge-title">「<?php echo htmlspecialchars($characterPledge, ENT_QUOTES, 'UTF-8'); ?>」</p>
-                        <p class="pledge-name"><?php echo htmlspecialchars($characterName, ENT_QUOTES, 'UTF-8'); ?></p>
+                        <p class="pledge-title">「教室に落書きし放題」</p>
+                        <p class="pledge-name">虹宮 ニョロ助</p>
                     </div>
                     <ul class="detail">
                         <li>集計結果は月日に、こちらのWeb上で公開予定です。投票は一人につき一回のみとさせて頂きます。ご了承ください。</li>

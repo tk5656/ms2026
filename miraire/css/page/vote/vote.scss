@@ -1,12 +1,102 @@
 @charset "utf-8";
 @use "../../module/variable" as *;
-@use "../../module/btn" as *;
 @use "../../module/animation" as *;
+@use "../../module/btn" as *;
 // ページ単体に適用するスタイル
 // stickyの打ち消し
 header,footer{
     position: static;
 }
+
+// ヘッダーのレスポンシブ対応
+header{
+    @media(769px <= width){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 1rem;
+        @media(769px <= width){
+            margin-left: 3%;
+            text-align: start;
+            margin-bottom: 0;
+        }
+        img.logo{
+            width: 180px;
+            @media(769px <= width){
+                width: 250px;
+            }
+        }
+    }
+    nav{
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            li{
+                span{
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    a[href="./vote.php"]{
+        text-align: right;
+        margin-right: 3%;
+        position: relative;
+        z-index: 10;
+        @media(769px <= width){
+            text-align: start;
+        }
+        img.vote{
+            width: 70px;
+            position: relative;
+            @media(769px <= width){
+                width: 120px;
+                top: 1.5rem;
+            }
+        }
+    }
+}
+
+// フッターのレスポンシブ対応
+footer{
+    padding: 0 3%;
+    @media(769px <= width){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: $footerHeight;
+    }
+    > img.logo{
+        width: 140px;
+        margin: 0.7rem 0;
+        @media(769px <= width){
+            width: 200px;
+            margin: 0;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+        margin-bottom: 0.7rem;
+        @media(769px <= width){
+            margin-bottom: 0;
+        }
+    }
+    > img.sns{
+        width: 120px;
+        @media(769px <= width){
+            width: 140px;
+        }
+    }
+}
+
 // 画面レイアウト
 html,
 body,
@@ -34,17 +124,18 @@ body,
         grid-area: footer;
     }
 }
-html{
-    overflow-x: hidden;
-}
 
+main{
+    background-image: url(../../../images/vote/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 // Swiper
 // Swiper本体
 .swiper{
     width: 100%;
     height: 100%;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
 }
 .swiper-wrapper,
 .swiper-slide,
@@ -52,38 +143,45 @@ html{
     width: 100%;
     height: 100%;
 }
+.swiper-wrapper{
+    overflow: visible;
+}
 .swiper-slide{
+    margin: 1rem 0;
+    transition: all 1s ease;
 
     &:not(.swiper-slide-active) {
         .slide_item {
             pointer-events: none;
             opacity: 0.3;
-            scale: 0.8;
-            // ここの自然なスケール変化はどうすればいいかわからない
+            scale: 0.7;
+
+            .text_wrapper{
+                display: none;
+            }
         }
     }
 }
 .slide_item{
-
     img{
         width: 100%;
         height: auto;
     }
     .text_wrapper{
-        padding: 0.5rem;
+        padding: 1rem;
+        
         p{
             text-align: center;
             font-family: "vdl-logojrblack", sans-serif;
             font-size: 1.2rem;
             font-weight: 500;
-            margin-bottom: 0.6rem;
             span{
-                font-size: 2rem;
+                font-size: 2.3rem;
             }
         }
         button{
             display: block;
-            margin: 0 auto;
+            margin: 0.6rem auto 1.8rem;
         }
     }
 }
@@ -285,7 +383,6 @@ html{
 }
 
 .vote-before-image {
-    // before / after 画像の位置を完全に揃えるため、両方 absolute & 中央寄せにする
     position: absolute;
     top: 0;
     left: 50%;
@@ -324,7 +421,6 @@ html{
     max-height: 30% !important;
     height: auto !important;
     opacity: 0;
-    // パーツの落下速度を少し速く
     transition: top 0.9s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease-in-out;
     pointer-events: none;
     object-fit: contain;
