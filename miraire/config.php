@@ -9,9 +9,7 @@ const DB   = 'miraire';     // ローカルで作ったDB名に合わせる
 const PASSWORD = '';        // XAMPPデフォルトは空文字
 
 // ロリポップサーバー環境の場合、上記を以下のように変更してください
-// const HOST = 'mysql1234.db.sakura.ne.jp'; // ロリポップのホスト名（管理画面で確認）
-// const USER = 'your_username'; // ロリポップのデータベースユーザー名
-// const DB = 'your_database_name'; // ロリポップのデータベース名
-// const PASSWORD = 'your_password'; // ロリポップのデータベースパスワード
-?>
-
+// const HOST = 'mysql80-2.lolipop.lan'; // ロリポップのホスト名（管理画面で確認）
+// const USER = 'LAA1691490'; // ロリポップのデータベースユーザー名
+// const DB = 'LAA1691490-miraire'; // ロリポップのデータベース名
+// const PASSWORD = 'DG12PW11'; // ロリポップのデータベースパスワード

@@ -4,7 +4,8 @@
 // 開発環境（XAMPP等）: display_errors = '1'
 error_reporting(E_ALL);
 // ★ローカル(XAMPP)では 1 にして詳細エラーを確認する
-ini_set('display_errors', '1');
+// ★本番環境（ロリポップ）では 0 に設定してください
+ini_set('display_errors', '0'); // ロリポップサーバーでは0に設定
 
 // データベース接続設定を読み込む
 require_once __DIR__ . '/config.php';

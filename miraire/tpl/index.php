@@ -25,7 +25,7 @@
             </ul>
         </nav>
         <p class="vote">
-            <a href=""><img class="vote-img" src="./images/header_box.png" alt="投票箱"></a>
+            <a href="./vote.php"><img class="vote-img" src="./images/header_box.png" alt="投票箱"></a>
         </p>
     </header>
     <main>
