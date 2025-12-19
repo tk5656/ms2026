@@ -19,18 +19,18 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="./index.php">About<span>本展示について</span></a></li>
+                <li><a href="index.php#about">About<span>本展示について</span></a></li>
                 <li><a href="">News<span>最新情報</span></a></li>
                 <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
             </ul>
         </nav>
         <p class="vote">
-            <a href="./vote.php"><img class="vote-img" src="./images/header_box.png" alt="投票箱"></a>
+            <a href="./vote.php"><img class="vote-img" src="./images/menu_box.png" alt="投票箱"></a>
         </p>
     </header>
     <main>
         <div class="completion">
-            <img src="./images/completion.png" alt="投票完了">
+            <img src="images/kanryo_title.png" alt="投票完了">
         </div>
         <div class="contents">
             <div class="isome-img">
@@ -42,7 +42,7 @@
                     <p class="election-title">第一回<br>HAL大阪改革総選挙</p>
                     <div class="committee">
                         <p class="committee-name">HAL大阪改革総選挙実行委員会</p>
-                        <img src="./images/kanryo_hanko.png" alt="実行委員会のハンコ">
+                        <img src="images/kanryo_hanko.png" alt="実行委員会のハンコ">
                     </div>
                     <div class="selected-pledge">
                         <h3>投票済の公約：</h3>
@@ -64,8 +64,8 @@
             <img class="logo" src="./images/hooter_logo.png" alt="">
         </div>
         <ul>
-            <li><a href="./index.php">本展示について</a></li>
-            <li><a href="./character.html">公約・キャラクター</a></li>
+            <li><a href="index.php#about">本展示について</a></li>
+            <li><a href="character.html">公約・キャラクター</a></li>
             <li><a href="">最新情報</a></li>
         </ul>
         <div class="sns-link">

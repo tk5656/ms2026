@@ -169,3 +169,5 @@ ini_set('display_errors', '0'); // 本番環境では必ず0
 - `config.php`にはデータベースのパスワードが含まれているため、Git管理から除外されています
 - 本番環境では必ず`display_errors = '0'`に設定
 - 必要に応じて`.htaccess`でアクセス制限を設定
+
+

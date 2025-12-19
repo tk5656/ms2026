@@ -9,90 +9,33 @@
     <link rel="stylesheet" href="./css/infographic.css">
 </head>
 <body>
-    <div class="ranking">
-        <div class="ranking-item">
+    <div class="ranking" id="rankingContainer">
+        <?php foreach ($ranking as $index => $item): ?>
+        <div class="ranking-item" 
+             data-character-id="<?php echo htmlspecialchars($item['id'], ENT_QUOTES, 'UTF-8'); ?>"
+             data-rank="<?php echo htmlspecialchars($item['rank'], ENT_QUOTES, 'UTF-8'); ?>"
+             data-votes="<?php echo htmlspecialchars($item['votes'], ENT_QUOTES, 'UTF-8'); ?>"
+             data-max-votes="<?php echo htmlspecialchars($maxVotes, ENT_QUOTES, 'UTF-8'); ?>">
             <div class="pledge-item">
-                <p class="rank">1</p>
-                <p class="pledge-name">コンビニ</p>
-                <img src="images/character1.png" alt="キャラクターの画像">
+                <div class="rank"><?php echo htmlspecialchars($item['rank'], ENT_QUOTES, 'UTF-8'); ?></div>
+                <div class="pledge-name"><?php echo htmlspecialchars($item['pledgeShort'], ENT_QUOTES, 'UTF-8'); ?></div>
+                <img src="images/<?php echo htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8'); ?>" alt="キャラクターの画像">
                 <div class="text">
-                    <p class="catch-copy">ハッピーが一番</p>
-                    <p class="name">雪原ペン次<span>(40)</span></p>
+                    <div class="catch-copy"><?php echo htmlspecialchars($item['catchCopy'], ENT_QUOTES, 'UTF-8'); ?></div>
+                    <div class="name"><?php echo htmlspecialchars($item['name'], ENT_QUOTES, 'UTF-8'); ?><span>(<?php echo htmlspecialchars($item['votes'], ENT_QUOTES, 'UTF-8'); ?>)</span></div>
                 </div>
             </div>
             <div class="gauge">
                 <div class="sector">
-                    <div class="now-gauge"></div>
+                    <div class="now-gauge" style="width: <?php echo ($item['votes'] / $maxVotes) * 100; ?>%;"></div>
                 </div>
             </div>
         </div>
-        <div class="ranking-item">
-            <div class="pledge-item">
-                <p class="rank">2</p>
-                <p class="pledge-name">コンビニ</p>
-                <img src="images/character1.png" alt="キャラクターの画像">
-                <div class="text">
-                    <p class="catch-copy">ハッピーが一番</p>
-                    <p class="name">雪原ペン次<span>(40)</span></p>
-                </div>
-            </div>
-            <div class="gauge">
-                <div class="sector">
-                    <div class="now-gauge"></div>
-                </div>
-            </div>
-        </div>
-        <div class="ranking-item">
-            <div class="pledge-item">
-                <p class="rank">3</p>
-                <p class="pledge-name">コンビニ</p>
-                <img src="images/character1.png" alt="キャラクターの画像">
-                <div class="text">
-                    <p class="catch-copy">ハッピーが一番</p>
-                    <p class="name">雪原ペン次<span>(40)</span></p>
-                </div>
-            </div>
-            <div class="gauge">
-                <div class="sector">
-                    <div class="now-gauge"></div>
-                </div>
-            </div>
-        </div>
-        <div class="ranking-item">
-            <div class="pledge-item">
-                <p class="rank">4</p>
-                <p class="pledge-name">コンビニ</p>
-                <img src="images/character1.png" alt="キャラクターの画像">
-                <div class="text">
-                    <p class="catch-copy">ハッピーが一番</p>
-                    <p class="name">雪原ペン次<span>(40)</span></p>
-                </div>
-            </div>
-            <div class="gauge">
-                <div class="sector">
-                    <div class="now-gauge"></div>
-                </div>
-            </div>
-        </div>
-        <div class="ranking-item">
-            <div class="pledge-item">
-                <p class="rank">5</p>
-                <p class="pledge-name">コンビニ</p>
-                <img src="images/character1.png" alt="キャラクターの画像">
-                <div class="text">
-                    <p class="catch-copy">ハッピーが一番</p>
-                    <p class="name">雪原ペン次<span>(40)</span></p>
-                </div>
-            </div>
-            <div class="gauge">
-                <div class="sector">
-                    <div class="now-gauge"></div>
-                </div>
-            </div>
-        </div>
+        <?php endforeach; ?>
     </div>
     <div class="bottom-logo">
         <img src="images/title_logo.svg" alt="ミライレのロゴ">
     </div>
+    <script src="./js/infographic.js"></script>
 </body>
 </html>

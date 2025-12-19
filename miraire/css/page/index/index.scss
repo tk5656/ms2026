@@ -56,11 +56,24 @@ section.about{
     background-repeat: none;
     background-size: cover;
     background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media(769px <= width){
+        justify-content: start;
+    }
     div.text-area{
         width: fit-content;
         max-width: 300px;
+        @media(769px <= width){
+            margin-left: 20%;
+        }
         h2{
             margin-bottom: 1em;
+            img{
+                width: 70%;
+            }
         }
         p.catchcopy{
             margin-bottom: 1.8em;
@@ -81,6 +94,10 @@ section.about{
 
 section.explanation{
     padding: 6rem 0;
+    background-image: url(../../../images/bg.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
     div.contents{
         @media(769px <= width){
             display: flex;
@@ -99,7 +116,6 @@ section.explanation{
                 width: 100%;
                 aspect-ratio: 3/2;
                 border-radius: 25px;
-                background-color: rgb(159, 159, 159);
                 margin-bottom: 2rem;
             }
             h3{
@@ -120,6 +136,3 @@ section.explanation{
         }
     }
 }
-// *{
-//     border: 1px solid red;
-// }

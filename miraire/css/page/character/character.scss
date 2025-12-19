@@ -2,128 +2,16 @@
 @use "../../module/variable" as *;
 @use "../../module/animation" as *;
 // ページ単体に適用するスタイル
-// stickyの打ち消し
+// ヘッダー、フッターのstickyを打ち消し
 header,footer{
     position: static;
 }
 
-// ヘッダーのレスポンシブ対応
-header{
-    @media(769px <= width){
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    h1{
-        text-align: center;
-        margin-bottom: 1rem;
-        @media(769px <= width){
-            margin-left: 3%;
-            text-align: start;
-            margin-bottom: 0;
-        }
-        img.logo{
-            width: 180px;
-            @media(769px <= width){
-                width: 250px;
-            }
-        }
-    }
-    nav{
-        ul{
-            display: flex;
-            justify-content: center;
-            gap: 1em;
-            li{
-                span{
-                    display: block;
-                    text-align: center;
-                }
-            }
-        }
-    }
-    a[href="./vote.php"]{
-        text-align: right;
-        margin-right: 3%;
-        position: relative;
-        z-index: 10;
-        @media(769px <= width){
-            text-align: start;
-        }
-        img.vote{
-            width: 70px;
-            position: relative;
-            @media(769px <= width){
-                width: 120px;
-                top: 1.5rem;
-            }
-        }
-    }
-}
-
-// フッターのレスポンシブ対応
-footer{
-    padding: 0 3%;
-    @media(769px <= width){
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: $footerHeight;
-    }
-    > img.logo{
-        width: 140px;
-        margin: 0.7rem 0;
-        @media(769px <= width){
-            width: 200px;
-            margin: 0;
-        }
-    }
-    ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5em;
-        margin-bottom: 0.7rem;
-        @media(769px <= width){
-            margin-bottom: 0;
-        }
-    }
-    > img.sns{
-        width: 120px;
-        @media(769px <= width){
-            width: 140px;
-        }
-    }
-}
-
-// 画面レイアウト
-html,
-body,
-#container{
-    height: 100%;
-    min-height: 100%;
+main{
+    height: 100vh;
     width: 100%;
-    min-width: 100%;
+    background-color: $bgColorWhite;
 }
-#container{
-    display: grid;
-    grid-template-rows: $headerHeight 1fr $footerHeight;
-    grid-template-columns: 100%;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    header{
-        grid-area: header;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
-}
-
 // Swiper
 // Swiper本体
 .swiper{

@@ -1,9 +1,7 @@
 @charset "utf-8";
 
 // scssファイルの読み込み
-@use "module/_setting.scss";
 @use "module/_header.scss";
-@use "module/_hamburger.scss";
 @use "module/_footer.scss";
 
 // サイト全体に共通するスタイルの読み込み
@@ -12,4 +10,8 @@ html{
     font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    width: 100%;
+}
+body{
+    width: 100%;
 }
