@@ -40,11 +40,15 @@
             return;
         }
         
-        fetch('./infographic.php', {
+        // キャッシュバスターを追加（タイムスタンプ）
+        const cacheBuster = '?_=' + new Date().getTime();
+        fetch('./infographic.php' + cacheBuster, {
             method: 'GET',
             headers: {
-                'X-Requested-With': 'XMLHttpRequest'
-            }
+                'X-Requested-With': 'XMLHttpRequest',
+                'Cache-Control': 'no-cache'
+            },
+            cache: 'no-store'
         })
         .then(function(response) {
             if (!response.ok) {

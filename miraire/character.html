@@ -22,7 +22,7 @@
         <header>
             <div class="header-inner">
                 <h1>
-                    <a href="./index.php"><img class="logo rotate_15" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
+                    <a href="./index.php"><img class="logo rotate_10" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
                 </h1>
                 <nav>
                     <ul>

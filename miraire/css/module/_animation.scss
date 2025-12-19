@@ -63,13 +63,13 @@
         transform: scale(1, 1);
     }
 
-// 15度回転
-.rotate_15{
+// 10度回転
+.rotate_10{
     transform: rotate(0deg);
-    transition: 0.5s;
+    transition: 0.3s;
 }
-.rotate_15:hover{
-    transform: rotate(-15deg);
+.rotate_10:hover{
+    transform: rotate(-10deg);
 }
 
 // 震える

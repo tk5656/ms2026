@@ -148,6 +148,10 @@ unset($item);
 
 // AJAXリクエストの場合はJSONを返す
 if ($isAjax) {
+    // キャッシュを無効化
+    header('Cache-Control: no-cache, no-store, must-revalidate');
+    header('Pragma: no-cache');
+    header('Expires: 0');
     header('Content-Type: application/json; charset=UTF-8');
     echo json_encode([
         'ranking' => $ranking,
@@ -160,6 +164,11 @@ if ($isAjax) {
 function h($string) {
     return htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
 }
+
+// 通常リクエストの場合もキャッシュを無効化
+header('Cache-Control: no-cache, no-store, must-revalidate');
+header('Pragma: no-cache');
+header('Expires: 0');
 
 // 通常リクエストの場合はHTMLテンプレートを読み込む
 require_once __DIR__ . "/tpl/infographic.php";
