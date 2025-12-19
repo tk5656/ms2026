@@ -14,24 +14,27 @@
 </head>
 <body>
     <header>
-        <h1>
-            <a href="./index.php"><img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="index.php#about">About<span>本展示について</span></a></li>
-                <li><a href="">News<span>最新情報</span></a></li>
-                <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
-            </ul>
-        </nav>
-        <p class="vote">
-            <a href="./vote.php"><img class="vote-img" src="./images/menu_box.png" alt="投票箱"></a>
-        </p>
+        <div class="header-inner">
+            <h1>
+                <a href="./index.php"><img class="logo rotate_15" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a class="marker" href="index.php#about">About<span>本展示について</span></a></li>
+                    <li><a class="marker" href="">News<span>最新情報</span></a></li>
+                    <li><a class="marker" href="./character.html">Chara<span>公約・キャラクター</span></a></li>
+                </ul>
+            </nav>
+            <p class="vote">
+                <a href="./vote.php"><img class="vote-img shake" src="./images/menu_box.png" alt="投票箱"></a>
+            </p>
+        </div>
     </header>
     <main>
         <section class="top">
             <img src="./images/top_samune.png" alt="">
         </section>
+
         <section id="about" class="about">
             <div class="text-area">
                 <h2><img src="images/top_about.png" alt=""></h2>
@@ -40,9 +43,10 @@
                     各公約ごとに個性溢れるキャラクターたちが登場し、あなたの投票体験をより楽しいものにします。<br>
                     また、投票ごとに選んだ公約の建物の様子が変化し、一票の大切さをより実感できる展示となっています。
                 </p>
-                <p class="link"><a href="./character.html">公約・キャラクターを見る</a></p>
+                <p class="link opasity_down"><a href="./character.html">公約・キャラクターを見る</a></p>
             </div>
         </section>
+
         <section class="explanation">
             <div class="contents">
                 <div class="item">
@@ -61,20 +65,22 @@
                     <p>一票を投じるごとに、<br>様々な形でアイソメが変化し、<br>未来の姿に近づいていきます。</p>
                 </div>
             </div>
-            <p class="link"><a href="">現在の投票状況</a></p>
+            <p class="link opasity_down"><a href="">現在の投票状況</a></p>
         </section>
     </main>
     <footer>
-        <div class="footer-logo">
-            <img class="logo" src="./images/hooter_logo.png" alt="">
-        </div>
-        <ul>
-            <li><a href="index.php#about">本展示について</a></li>
-            <li><a href="character.html">公約・キャラクター</a></li>
-            <li><a href="">最新情報</a></li>
-        </ul>
-        <div class="sns-link">
-            <img class="sns" src="./images/hooter_SNS.png" alt="">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img class="logo" src="./images/hooter_logo.png" alt="">
+            </div>
+            <ul>
+                <li><a class="underline" href="index.php#about">本展示について</a></li>
+                <li><a class="underline" href="character.html">公約・キャラクター</a></li>
+                <li><a class="underline" href="">最新情報</a></li>
+            </ul>
+            <div class="sns-link">
+                <img class="sns" src="./images/hooter_SNS.png" alt="">
+            </div>
         </div>
     </footer>
 </body>

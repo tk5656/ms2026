@@ -1,4 +1,5 @@
 @use "../../module/variable" as *;
+@use "../../module/animation" as *;
 // ページ単体に適用するスタイル
 // 文字設定
 section.about{
@@ -24,6 +25,7 @@ section.about{
         }
     }
 }
+
 section.explanation{
     div.contents{
         div.item{
@@ -40,37 +42,49 @@ section.explanation{
     p.link{
         color: $White;
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 
 // レイアウト
+p.link{
+    text-align: center;
+    a{
+        padding: 0.8em 1em;
+        background-color: $Color1;
+        border-radius: 25px;
+    }
+}
+
 section.top{
     img{
         width: 100vw;
     }
 }
-
 section.about{
     background-image: url(../../../images/about_img.png);
     background-repeat: none;
     background-size: cover;
-    background-position: center;
+    background-position: center bottom 0;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
     @media(769px <= width){
+        background-position: center;
         justify-content: start;
     }
     div.text-area{
         width: fit-content;
         max-width: 300px;
+
         @media(769px <= width){
-            margin-left: 20%;
+            margin-left: 10%;
         }
         h2{
             margin-bottom: 1em;
+
             img{
                 width: 70%;
             }
@@ -83,6 +97,7 @@ section.about{
         }
         p.link{
             text-align: center;
+
             a{
                 padding: 0.8em 1em;
                 background-color: $bgColorWhite;
@@ -98,6 +113,7 @@ section.explanation{
     background-repeat: none;
     background-size: cover;
     background-position: center;
+
     div.contents{
         @media(769px <= width){
             display: flex;
@@ -108,6 +124,7 @@ section.explanation{
         div.item{
             width: 350px;
             margin: 0 auto 2rem;
+
             @media(769px <= width){
                 width: 30%;
                 margin: 0;
@@ -127,12 +144,5 @@ section.explanation{
             }
         }
     }
-    p.link{
-        text-align: center;
-        a{
-            padding: 0.8em 1em;
-            background-color: $Color1;
-            border-radius: 25px;
-        }
-    }
+
 }

@@ -8,7 +8,7 @@ const USER = 'root';        // XAMPPのデフォルトユーザー
 const DB   = 'miraire';     // ローカルで作ったDB名に合わせる
 const PASSWORD = '';        // XAMPPデフォルトは空文字
 
-// ロリポップサーバー環境の場合、上記を以下のように変更してください
+// ★ロリポップサーバー環境（本番環境用）
 // const HOST = 'mysql80-2.lolipop.lan'; // ロリポップのホスト名（管理画面で確認）
 // const USER = 'LAA1691490'; // ロリポップのデータベースユーザー名
 // const DB = 'LAA1691490-miraire'; // ロリポップのデータベース名

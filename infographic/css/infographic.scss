@@ -126,10 +126,11 @@ div.ranking-item{
     overflow-x: hidden;
     overflow-y: visible;
     position: relative;
+    transition: transform 1.5s ease-in-out;
     
     // 投票数を右側に表示（疑似要素）
     &::after{
-        content: attr(data-votes) ;
+        content: attr(data-votes);
         position: absolute;
         right: 1rem;
         top: 50%;
@@ -243,11 +244,6 @@ div.bottom-logo{
 
 // animation
 div.ranking.ranking-updating {
-    position: relative;
-}
-
-div.ranking-item {
-    transition: transform 1.5s ease-in-out;
     position: relative;
 }
 

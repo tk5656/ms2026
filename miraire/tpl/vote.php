@@ -20,19 +20,21 @@
 
     <div id="container">
         <header>
-            <h1>
-                <a href="./index.php"><img class="logo" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="index.php#about">About<span>本展示について</span></a></li>
-                    <li><a href="">News<span>最新情報</span></a></li>
-                    <li><a href="./character.html">Chara<span>公約・キャラクター</span></a></li>
-                </ul>
-            </nav>
-            <p class="vote">
-                <a href="./vote.php"><img class="vote-img" src="./images/menu_box.png" alt="投票箱"></a>
-            </p>
+            <div class="header-inner">
+                <h1>
+                    <a href="./index.php"><img class="logo rotate_15" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a class="marker" href="index.php#about">About<span>本展示について</span></a></li>
+                        <li><a class="marker" href="">News<span>最新情報</span></a></li>
+                        <li><a class="marker" href="./character.html">Chara<span>公約・キャラクター</span></a></li>
+                    </ul>
+                </nav>
+                <p class="vote">
+                    <a href="./vote.php"><img class="vote-img shake" src="./images/menu_box.png" alt="投票箱"></a>
+                </p>
+            </div>
         </header>
         <main>
             <!-- Swiper -->
@@ -91,16 +93,18 @@
             </div><!-- /swiper -->
         </main>
         <footer>
-            <div class="footer-logo">
-                <img class="logo" src="./images/hooter_logo.png" alt="">
-            </div>
-            <ul>
-                <li><a href="index.php#about">本展示について</a></li>
-                <li><a href="character.html">公約・キャラクター</a></li>
-                <li><a href="">最新情報</a></li>
-            </ul>
-            <div class="sns-link">
-                <img class="sns" src="./images/hooter_SNS.png" alt="">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <img class="logo" src="./images/hooter_logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a class="underline" href="index.php#about">本展示について</a></li>
+                    <li><a class="underline" href="character.html">公約・キャラクター</a></li>
+                    <li><a class="underline" href="">最新情報</a></li>
+                </ul>
+                <div class="sns-link">
+                    <img class="sns" src="./images/hooter_SNS.png" alt="">
+                </div>
             </div>
         </footer>
     </div>

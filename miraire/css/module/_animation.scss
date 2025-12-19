@@ -1,6 +1,6 @@
 @use "_variable.scss" as *;
 
-// 暗 → 明
+// 薄 → 濃
 .opacity_up{
     opacity: 0.5;
     transition: 0.3s;
@@ -9,11 +9,114 @@
     opacity: 1;
 }
 
-// 明 → 暗
+// 濃 → 薄
 .opasity_down{
     opacity: 1;
     transition: 0.3s;
 }
 .opasity_down:hover{
     opacity: 0.5;
+}
+
+// 暗 → 明
+.brightness_up{
+    filter: brightness(90%);
+    transition: 0.3s;
+}
+.brightness_up:hover{
+    filter: brightness(100%);
+}
+
+// 明 → 暗
+.brightness_down{
+    filter: brightness(100%);
+    transition: 0.3s;
+}
+.brightness_down:hover{
+    filter: brightness(90%);
+}
+
+// マーカーのアニメーション
+.marker{
+    position: relative;
+    z-index: 1;
+    }
+    .marker::before {
+        background: $Color1;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: scale(0, 1);
+        transform-origin: right top;
+        transition: transform .3s;
+        z-index: -1;
+    }
+    .marker:hover {
+        color: #fff;
+    }
+    .marker:hover::before {
+        transform-origin: left top;
+        transform: scale(1, 1);
+    }
+
+// 15度回転
+.rotate_15{
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+.rotate_15:hover{
+    transform: rotate(-15deg);
+}
+
+// 震える
+.shake{
+    transition: all .5s;
+}
+.shake:hover {
+    animation: shake 0.2s linear 2;
+}
+@keyframes shake{
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(2px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+// アンダーライン
+.underline{
+    position: relative;
+}
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $Black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.4s ease;
+}
+.underline:hover::after {
+    transform: scaleX(1);
 }

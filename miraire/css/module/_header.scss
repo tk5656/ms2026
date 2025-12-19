@@ -1,16 +1,22 @@
 @use "_variable.scss" as *;
+@use "_animation.scss" as *;
 
 // headerの文字設定
 header{
     li{
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: bold;
         line-height: 1;
         font-family: "vdl-logojrblack", sans-serif;
         color: $Black;
+
+        @media(769px <= width){
+            font-size: 1.5rem;
+        }
         span{
-            font-size: 0.4rem;
+            font-size: 0.5em;
             font-family: "hiragino-kaku-gothic-pron", sans-serif;
+            font-weight: normal;
         }
     }
 }
@@ -21,51 +27,95 @@ header{
     height: $headerHeight;
     position: sticky;
     top: 0;
-    @media(769px <= width){
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    padding: 0.5em 0;
+
+    div.header-inner{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        
+            @media(769px <= width){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
     }
     h1{
+        display: block;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5em;
+
         @media(769px <= width){
-            margin-left: 3%;
-            text-align: start;
+            position: absolute;
+            display: inline-block;
+            width: fit-content;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 3%;
         }
         img.logo{
-            width: 180px;
+            width: 140px;
+
             @media(769px <= width){
-                width: 250px;
+                width: 180px;
             }
         }
     }
     nav{
+        height: fit-content;
+        width: fit-content;
+        margin-bottom: 0.5em;
+        margin: 0 auto;
+
         ul{
             display: flex;
             justify-content: center;
+            align-items: baseline;
             gap: 1em;
+
+            @media(769px <= width){
+                align-items: center;
+                gap: 2em;
+            }
             li{
-                span{
-                    display: block;
-                    text-align: center;
+                text-align: center;
+
+                a{
+                    display: inline-block;
+
+                    @media(769px <= width){
+                        padding: 0.4em 1em;
+                    }
+                    span{
+                        display: block;
+                        text-align: center;
+                        
+                        @media(769px <= width){
+                            margin-top: 0.5em;
+                        }
+                    }
                 }
             }
         }
     }
     p.vote{
-        text-align: right;
-        margin-right: 3%;
+        display: inline-block;
+        width: 15vw;
+        max-width: 60px;
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+
         @media(769px <= width){
-            text-align: start;
+            top: 0.8rem;
+            transform: translateY(0);
+            max-width: 100px;
         }
         img.vote-img{
-            width: 70px;
-            position: relative;
-            @media(769px <= width){
-                width: 120px;
-                top: 1.5rem;
-            }
+            width: 100%;
         }
     }
 }

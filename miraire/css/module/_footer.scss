@@ -1,31 +1,42 @@
 @use "_variable.scss" as *;
+@use "_animation.scss" as *;
 
 footer{
     background-color: $bgColorWhite;
-    // position: sticky;
-    bottom: 0;
-    padding: 0 3%;
-    width: 100vw;
-    height: calc($footerHeight + 30px);
-    @media(769px <= width){
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: $footerHeight;
+    height: $footerHeight;
+    width: 100%;
+    padding: 1rem 0;
+
+    div.footer-inner{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        
+        @media(769px <= width){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     div.footer-logo{
-        display: flex;
-        justify-content: center;
+        display: block;
+        text-align: center;
+        margin-bottom: 0.5rem;
+
         @media(769px <= width){
-            display: inline;
-            justify-content: flex-start;
+            position: absolute;
+            display: inline-block;
+            width: fit-content;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 3%;
         }
         img.logo{
-            width: 140px;
-            margin: 0.7rem 0;
+            width: 100px;
+
             @media(769px <= width){
-                width: 200px;
-                margin: 0;
+                width: 140px;
             }
         }
     }
@@ -33,23 +44,37 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1.5em;
-        margin-bottom: 0.7rem;
+        gap: 1.5rem;
+        font-size: 0.6rem;
+
         @media(769px <= width){
-            margin-bottom: 0;
+            font-size: 1rem;
+            gap: 2em;
+            margin-bottom: 0.2rem;
+        }
+        a{
+            display: inline-block;
+            box-sizing: border-box;
         }
     }
     div.sns-link{
-        display: flex;
-        justify-content: center;
+        display: block;
+        text-align: center;
+
+        @media(769px <= width){
+            position: absolute;
+            display: inline-block;
+            width: fit-content;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 3%;
+        }
         img.sns{
-            width: 120px;
+            width: 60px;
+
             @media(769px <= width){
-                width: 140px;
+                width: 120px;
             }
         }
     }
 }
-// *{
-//     border: 1px solid red;
-// }
