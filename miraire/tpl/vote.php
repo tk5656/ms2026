@@ -97,11 +97,13 @@
                 <div class="footer-logo">
                     <img class="logo" src="./images/hooter_logo.png" alt="">
                 </div>
-                <ul>
-                    <li><a class="underline" href="index.php#about">本展示について</a></li>
-                    <li><a class="underline" href="character.html">公約・キャラクター</a></li>
-                    <li><a class="underline" href="">最新情報</a></li>
-                </ul>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a class="underline" href="index.php#about">本展示について</a></li>
+                        <li><a class="underline" href="character.html">公約・キャラクター</a></li>
+                        <li><a class="underline" href="">最新情報</a></li>
+                    </ul>
+                </div>
                 <div class="sns-link">
                     <img class="sns" src="./images/hooter_SNS.png" alt="">
                 </div>
@@ -114,7 +116,7 @@
         <div class="modal-overlay"></div>
         <div class="modal-content">
             <div class="modal-body">
-                <h2 class="modal-title">確認:</h2>
+                <h2 class="modal-title">確認</h2>
                 <p class="modal-question">この公約でよろしいですか?</p>
                 <p class="modal-label">選択中の公約:</p>
                 <p class="modal-pledge" id="modalPledge">「○○○○○○○○○」</p>
@@ -124,7 +126,7 @@
                         <input type="hidden" name="characterNum" id="characterNum" value="キャラクターナンバー">
                         <button type="submit" class="btn_mainColor opacity_down" id="confirmVoteBtn">投票する</button>
                     </form>
-                    <button type="button" class="btn_cancel" id="cancelVoteBtn">選びなおす</button>
+                    <button type="button" class="btn_white opacity_down" id="cancelVoteBtn">選びなおす</button>
                 </div>
             </div>
         </div>

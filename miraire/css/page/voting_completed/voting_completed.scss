@@ -21,7 +21,8 @@ div.contents{
             p.committee-name{
                 color: $Black;
                 font-size: 0.65rem;
-                letter-spacing: 0.3em;
+                letter-spacing: 0.5em;
+                font-weight: bold;
             }
         }
         div.selected-pledge{
@@ -47,10 +48,29 @@ div.contents{
                 font-size: 0.65rem;
             }
         }
-        p.post{
-            font-size: 1.2rem;
+        p.add-wallet{
+            font-size: 1rem;
             font-weight: bold;
             color: $White;
+        }
+        div.sns-contents{
+            p.text{
+                font-weight: bold;
+                color: $Black;
+                line-height: 1.3;
+            }
+            p.X-link{
+                font-weight: bold;
+                color: $White;
+                font-size: 0.8rem;
+                line-height: 2.5;
+            }
+            p.instagram-link{
+                font-weight: bold;
+                color: $White;
+                font-size: 0.8rem;
+                line-height: 2.5;
+            }
         }
     }
 }
@@ -105,15 +125,13 @@ main{
                 }
                 div.committee{
                     display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 4em;
+                    margin-bottom: 1em;
                     p.committee-name{
                         text-align: center;
                         margin-left: 4rem;
                     }
                     img{
                         width: 3rem;
-                        right: 0;
                     }
                 }
                 div.selected-pledge{
@@ -129,17 +147,45 @@ main{
                     }
                 }
                 ul.detail{
-                    margin: 0 auto 4rem;
+                    margin: 0 auto 2rem;
                     width: 290px;
                     li{
                         list-style: disc;
                     }
                 }
-                p.post{
+                p.add-wallet{
                     text-align: center;
+                    margin-bottom: 3em;
                     a{
+                        background-color: $Color2;
+                        padding: 0.7em 1em;
+                        border-radius: 25px;
+                    }
+                }
+                div.sns-contents{
+                    padding-bottom: 3rem;
+                    @media(769px <= width){
+                        padding-bottom: 0;
+                    }
+                    p.text{
+                        text-align: center;
+                        margin-bottom: 1em;
+                    }
+                    p.X-link{
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
                         background-color: $Black;
-                        padding: 0.5em 0.7em;
+                        border-radius: 25px;
+                        margin-bottom: 1.3em;
+                    }
+                    p.instagram-link{
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
+                        background-image: linear-gradient(129deg, #8924d9, #d53e7c 30% 49%, #cf8650 86%);
                         border-radius: 25px;
                     }
                 }

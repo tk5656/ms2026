@@ -4,7 +4,7 @@
 // headerの文字設定
 header{
     li{
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: bold;
         line-height: 1;
         font-family: "vdl-logojrblack", sans-serif;
@@ -27,7 +27,7 @@ header{
     height: $headerHeight;
     position: sticky;
     top: 0;
-    padding: 0.5em 0;
+    padding: 1rem 0;
 
     div.header-inner{
         height: 100%;
@@ -55,24 +55,24 @@ header{
             left: 3%;
         }
         img.logo{
-            width: 140px;
+            width: 120px;
 
             @media(769px <= width){
                 width: 180px;
+                max-width: 16vw;
             }
         }
     }
     nav{
         height: fit-content;
         width: fit-content;
-        margin-bottom: 0.5em;
         margin: 0 auto;
 
         ul{
             display: flex;
             justify-content: center;
             align-items: baseline;
-            gap: 1em;
+            gap: 1.2em;
 
             @media(769px <= width){
                 align-items: center;
@@ -110,7 +110,7 @@ header{
         z-index: 10;
 
         @media(769px <= width){
-            top: 0.8rem;
+            top: 0;
             transform: translateY(0);
             max-width: 100px;
         }

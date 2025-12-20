@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOP</title>
+    <title>ミライレ｜未来の投票所</title>
     <!-- destyle CSS -->
     <link rel="stylesheet" href="css/destyle.css">
     <!-- Adobe fonts -->
@@ -73,11 +73,13 @@
             <div class="footer-logo">
                 <img class="logo" src="./images/hooter_logo.png" alt="">
             </div>
-            <ul>
-                <li><a class="underline" href="index.php#about">本展示について</a></li>
-                <li><a class="underline" href="character.html">公約・キャラクター</a></li>
-                <li><a class="underline" href="">最新情報</a></li>
-            </ul>
+            <div class="footer-nav">
+                <ul>
+                    <li><a class="underline" href="index.php#about">本展示について</a></li>
+                    <li><a class="underline" href="character.html">公約・キャラクター</a></li>
+                    <li><a class="underline" href="">最新情報</a></li>
+                </ul>
+            </div>
             <div class="sns-link">
                 <img class="sns" src="./images/hooter_SNS.png" alt="">
             </div>

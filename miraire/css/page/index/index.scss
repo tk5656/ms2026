@@ -57,8 +57,26 @@ p.link{
 }
 
 section.top{
+    height: 100vh;
+    position: relative;
+
+    @media(769px <= width){
+        height: auto;
+        position: static;
+    }
     img{
-        width: 100vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: -1;
+
+        @media(769px <= width){
+            position: static;
+            height: auto;
+            width: 100%;
+        }
     }
 }
 section.about{
@@ -108,25 +126,28 @@ section.about{
 }
 
 section.explanation{
-    padding: 6rem 0;
+    padding: 6rem 3%;
     background-image: url(../../../images/bg.png);
     background-repeat: none;
     background-size: cover;
     background-position: center;
 
     div.contents{
+        width: 100%;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
         @media(769px <= width){
             display: flex;
             justify-content: center;
         }
-        gap: 1.5rem;
-        margin-bottom: 4rem;
         div.item{
-            width: 350px;
+            width: 100%;
+            max-width: 350px;
             margin: 0 auto 2rem;
 
             @media(769px <= width){
                 width: 30%;
+                max-width: 100%;
                 margin: 0;
             }
             img{

@@ -56,7 +56,12 @@
                         <li>投票がお済みで無い方への、演出のネタバレ等はご遠慮ください。</li>
                         <li>当ホームページURLを、まだブースに訪れていない第三者に共有する行為はお控えください。</li>
                     </ul>
-                    <p class="post"><a href="">投票結果をツイートする</a></p>
+                    <p class="add-wallet"><a href="">投票済証をウォレットに追加する</a></p>
+                    <div class="sns-contents">
+                        <p class="text">投票完了証明を<br>SNSでシェアしよう！</p>
+                        <p class="X-link"><a href="">Xでポストする</a></p>
+                        <p class="instagram-link"><a href="">ストーリーズに追加する</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,11 +71,13 @@
             <div class="footer-logo">
                 <img class="logo" src="./images/hooter_logo.png" alt="">
             </div>
-            <ul>
-                <li><a class="underline" href="index.php#about">本展示について</a></li>
-                <li><a class="underline" href="character.html">公約・キャラクター</a></li>
-                <li><a class="underline" href="">最新情報</a></li>
-            </ul>
+            <div class="footer-nav">
+                <ul>
+                    <li><a class="underline" href="index.php#about">本展示について</a></li>
+                    <li><a class="underline" href="character.html">公約・キャラクター</a></li>
+                    <li><a class="underline" href="">最新情報</a></li>
+                </ul>
+            </div>
             <div class="sns-link">
                 <img class="sns" src="./images/hooter_SNS.png" alt="">
             </div>
