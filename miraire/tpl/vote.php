@@ -15,6 +15,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/page/vote/vote.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -45,7 +47,7 @@
                             <img src="./images/vote/isometric1.png" alt="">
                             <div class="text_wrapper">
                                 <p>選択中の公約：<br><span>雪原ペン次</span></p>
-                                <button onclick="voteModal(0)" type="button" class="btn_mainColor vote-btn">このキャラに投票する</button>
+                                <button onclick="voteModal(0)" type="button" class="btn_mainColor vote-btn opacity_down">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
@@ -54,7 +56,7 @@
                             <img src="./images/vote/isometric2.png" alt="">
                             <div class="text_wrapper">
                                 <p>選択中の公約：<br><span>虹宮ニョロ明</span></p>
-                                <button onclick="voteModal(1)" type="button" class="btn_mainColor vote-btn">このキャラに投票する</button>
+                                <button onclick="voteModal(1)" type="button" class="btn_mainColor vote-btn opacity_down">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
@@ -63,7 +65,7 @@
                             <img src="./images/vote/isometric3.png" alt="">
                             <div class="text_wrapper">
                                 <p>選択中の公約：<br><span>鳥谷コケ蔵</span></p>
-                                <button onclick="voteModal(2)" type="button" class="btn_mainColor vote-btn">このキャラに投票する</button>
+                                <button onclick="voteModal(2)" type="button" class="btn_mainColor vote-btn opacity_down">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
@@ -72,7 +74,7 @@
                             <img src="./images/vote/isometric4.png" alt="">
                             <div class="text_wrapper">
                                 <p>選択中の公約：<br><span>犬山イチ郎</span></p>
-                                <button onclick="voteModal(3)" type="button" class="btn_mainColor vote-btn">このキャラに投票する</button>
+                                <button onclick="voteModal(3)" type="button" class="btn_mainColor vote-btn opacity_down">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
@@ -81,12 +83,11 @@
                             <img src="./images/vote/isometric5.png" alt="">
                             <div class="text_wrapper">
                                 <p>選択中の公約：<br><span>猫川ニャミ子</span></p>
-                                <button onclick="voteModal(4)" type="button" class="btn_mainColor vote-btn">このキャラに投票する</button>
+                                <button onclick="voteModal(4)" type="button" class="btn_mainColor vote-btn opacity_down">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
                 </div><!-- /swiper-wrapper -->  
-                <!-- ボタンのレスポンシブ対応ができていない、階層を変更する必要あり -->
                 <!-- navigation buttons --> 
                 <div class="swiper-button-prev opacity_up"></div>
                 <div class="swiper-button-next opacity_up"></div>

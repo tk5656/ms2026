@@ -11,6 +11,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/page/index/index.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -43,7 +45,7 @@
                     各公約ごとに個性溢れるキャラクターたちが登場し、あなたの投票体験をより楽しいものにします。<br>
                     また、投票ごとに選んだ公約の建物の様子が変化し、一票の大切さをより実感できる展示となっています。
                 </p>
-                <p class="link opasity_down"><a href="./character.html">公約・キャラクターを見る</a></p>
+                <p class="link opacity_down"><a href="./character.html">公約・キャラクターを見る</a></p>
             </div>
         </section>
 
@@ -65,7 +67,7 @@
                     <p>一票を投じるごとに、<br>様々な形でアイソメが変化し、<br>未来の姿に近づいていきます。</p>
                 </div>
             </div>
-            <p class="link opasity_down"><a href="">現在の投票状況</a></p>
+            <p class="link opacity_down"><a href="">現在の投票状況</a></p>
         </section>
     </main>
     <footer>

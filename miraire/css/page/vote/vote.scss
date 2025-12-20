@@ -1,7 +1,7 @@
 @charset "utf-8";
 @use "../../module/variable" as *;
-@use "../../module/animation" as *;
 @use "../../module/btn" as *;
+@use "../../module/animation" as *;
 // ページ単体に適用するスタイル
 // ヘッダー、フッターのstickyを打ち消し
 header,footer{

@@ -7,6 +7,8 @@
     <!-- cssファイル読み込み -->
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/infographic.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
