@@ -9,8 +9,8 @@
     <!-- Adobe fonts -->
      <script src="./js/Adobe_fonts.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/page/index/index.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/page/index/index.css?v=<?php echo time(); ?>">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -24,7 +24,7 @@
                 <ul>
                     <li><a class="marker" href="index.php#about">About<span>本展示について</span></a></li>
                     <li><a class="marker" href="">News<span>最新情報</span></a></li>
-                    <li><a class="marker" href="./character.html">Chara<span>公約・キャラクター</span></a></li>
+                    <li><a class="marker" href="./character.php">Chara<span>公約・キャラクター</span></a></li>
                 </ul>
             </nav>
             <p class="vote">
@@ -32,6 +32,7 @@
             </p>
         </div>
     </header>
+    
     <main>
         <section class="top">
             <img src="./images/top_samune.png" alt="">
@@ -45,7 +46,7 @@
                     各公約ごとに個性溢れるキャラクターたちが登場し、あなたの投票体験をより楽しいものにします。<br>
                     また、投票ごとに選んだ公約の建物の様子が変化し、一票の大切さをより実感できる展示となっています。
                 </p>
-                <p class="link opacity_down"><a href="./character.html">公約・キャラクターを見る</a></p>
+                <p class="link opacity_down"><a href="./character.php">公約・キャラクターを見る</a></p>
             </div>
         </section>
 
@@ -70,6 +71,7 @@
             <p class="link opacity_down"><a href="">現在の投票状況</a></p>
         </section>
     </main>
+
     <footer>
         <div class="footer-inner">
             <div class="footer-logo">
@@ -78,7 +80,7 @@
             <div class="footer-nav">
                 <ul>
                     <li><a class="underline" href="index.php#about">本展示について</a></li>
-                    <li><a class="underline" href="character.html">公約・キャラクター</a></li>
+                    <li><a class="underline" href="character.php">公約・キャラクター</a></li>
                     <li><a class="underline" href="">最新情報</a></li>
                 </ul>
             </div>

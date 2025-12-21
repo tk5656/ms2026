@@ -1,6 +1,10 @@
 @use "../../module/variable" as *;
 @use "../../module/animation" as *;
 // ページ単体に適用するスタイル
+// スムーススクロール
+html{
+    scroll-behavior: smooth;
+}
 // 文字設定
 section.about{
     div.text-area{
@@ -57,7 +61,7 @@ p.link{
 }
 
 section.top{
-    height: 100vh;
+    height: calc(100vh - $headerHeight);
     position: relative;
 
     @media(769px <= width){
@@ -165,5 +169,4 @@ section.explanation{
             }
         }
     }
-
 }

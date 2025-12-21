@@ -163,7 +163,7 @@ function startVoteAnimation(data, characterNum) {
                         setTimeout(function() {
                             const form = document.createElement('form');
                             form.method = 'POST';
-                            form.action = './voting_completed.php';
+                            form.action = './voting_completed' + characterNum + '.php';
                             
                             const input = document.createElement('input');
                             input.type = 'hidden';
@@ -203,7 +203,7 @@ function startVoteAnimation(data, characterNum) {
                     setTimeout(function() {
                         const form = document.createElement('form');
                         form.method = 'POST';
-                        form.action = './voting_completed.php';
+                        form.action = './voting_completed' + characterNum + '.php';
                         
                         const input = document.createElement('input');
                         input.type = 'hidden';
@@ -218,4 +218,49 @@ function startVoteAnimation(data, characterNum) {
             }, 1500); // 1.5秒待機（パーツがある場合と近いタイミング）
         }
     }, 1500); // 最初の1.5秒待機
+}
+
+// 左下のキャラクターの表示操作
+const btnAfter = document.getElementsByClassName("swiper-button-next").item(0);
+const btnBefore = document.getElementsByClassName("swiper-button-prev").item(0);
+const img = document.getElementsByClassName("character-img").item(0);
+let countNum = 1;
+
+// 画像をフェードアニメーションで切り替え
+function changeImage(newSrc) {
+    if (!img) {
+        return;
+    }
+    img.style.transition = 'opacity 0.3s ease-in-out';
+    img.style.opacity = '0';
+    setTimeout(function() {
+        img.src = newSrc;
+        img.onload = function() {
+            img.style.opacity = '1';
+        };
+    }, 300);
+}
+
+if (btnAfter) {
+    btnAfter.addEventListener("click", function(){
+        countNum++;
+        if(countNum <= 5){
+            changeImage(`images/vote/character/character${countNum}.png`);
+        }else{
+            countNum = 1;
+            changeImage(`images/vote/character/character${countNum}.png`);
+        }
+    });
+}
+
+if (btnBefore) {
+    btnBefore.addEventListener("click", function(){
+        countNum--;
+        if(1 <= countNum){
+            changeImage(`images/vote/character/character${countNum}.png`);
+        }else{
+            countNum = 5;
+            changeImage(`images/vote/character/character${countNum}.png`);
+        }
+    });
 }

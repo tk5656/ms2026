@@ -1,3 +1,3 @@
 <?php
-require_once "./tpl/voting_completed.php";
+require_once __DIR__ . "/tpl/voting_completed.php";
 ?>

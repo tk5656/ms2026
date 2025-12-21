@@ -183,13 +183,9 @@
     // アイテムの内容を更新
     function updateItemContent(element, newItem) {
         const rankElement = element.querySelector('.rank');
-        const votesSpan = element.querySelector('.name span');
         
         if (rankElement) {
             rankElement.textContent = newItem.rank;
-        }
-        if (votesSpan) {
-            votesSpan.textContent = '(' + newItem.votes + ')';
         }
         
         element.setAttribute('data-rank', newItem.rank);

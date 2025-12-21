@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>infographic</title>
+    <title>現在の投票状況｜ミライレ</title>
     <!-- cssファイル読み込み -->
     <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="css/infographic.css">
+    <link rel="stylesheet" href="css/infographic.css?v=<?php echo time(); ?>">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>

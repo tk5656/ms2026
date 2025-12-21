@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>投票完了</title>
+    <title>投票完了｜ミライレ</title>
     <!-- destyle CSS -->
     <link rel="stylesheet" href="css/destyle.css">
     <!-- Adobe fonts -->
      <script src="./js/Adobe_fonts.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/page/voting_completed/voting_completed.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/page/voting_completed/voting_completed.css?v=<?php echo time(); ?>">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -24,7 +24,7 @@
                 <ul>
                     <li><a class="marker" href="index.php#about">About<span>本展示について</span></a></li>
                     <li><a class="marker" href="">News<span>最新情報</span></a></li>
-                    <li><a class="marker" href="./character.html">Chara<span>公約・キャラクター</span></a></li>
+                    <li><a class="marker" href="./character.php">Chara<span>公約・キャラクター</span></a></li>
                 </ul>
             </nav>
             <p class="vote">
@@ -38,7 +38,7 @@
         </div>
         <div class="contents">
             <div class="isome-img">
-                <img src="" alt="アイソメの画像">
+                <img src="images/voting_completed_isome/voting_completed2.png" alt="アイソメの画像">
             </div>
             <div class="completion-message">
                 <h2>投票済証</h2>
@@ -50,8 +50,8 @@
                     </div>
                     <div class="selected-pledge">
                         <h3>投票済の公約：</h3>
-                        <p class="pledge-title">「教室に落書きし放題」</p>
-                        <p class="pledge-name">虹宮 ニョロ助</p>
+                        <p class="pledge-title">「コンビニを学内につくる」</p>
+                        <p class="pledge-name">雪原 ぺん次</p>
                     </div>
                     <ul class="detail">
                         <li>集計結果は月日に、こちらのWeb上で公開予定です。投票は一人につき一回のみとさせて頂きます。ご了承ください。</li>
@@ -73,13 +73,11 @@
             <div class="footer-logo">
                 <img class="logo" src="./images/hooter_logo.png" alt="">
             </div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a class="underline" href="index.php#about">本展示について</a></li>
-                    <li><a class="underline" href="character.html">公約・キャラクター</a></li>
-                    <li><a class="underline" href="">最新情報</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a class="underline" href="index.php#about">本展示について</a></li>
+                <li><a class="underline" href="character.php">公約・キャラクター</a></li>
+                <li><a class="underline" href="">最新情報</a></li>
+            </ul>
             <div class="sns-link">
                 <img class="sns" src="./images/hooter_SNS.png" alt="">
             </div>

@@ -2,11 +2,11 @@
 @use "_animation.scss" as *;
 
 footer{
-    background-color: $bgColorWhite;
     height: $footerHeight;
     width: 100%;
+    background-color: $bgColorWhite;
     padding: 1rem 0;
-
+    
     div.footer-inner{
         height: 100%;
         width: 100%;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>投票する</title>
+    <title>投票する｜ミライレ</title>
     <!-- destyle CSS -->
     <link rel="stylesheet" href="css/destyle.css">
     <!-- Adobe fonts -->
@@ -13,8 +13,8 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b7038e28dd.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/page/vote/vote.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/page/vote/vote.css?v=<?php echo time(); ?>">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -30,7 +30,7 @@
                     <ul>
                         <li><a class="marker" href="index.php#about">About<span>本展示について</span></a></li>
                         <li><a class="marker" href="">News<span>最新情報</span></a></li>
-                        <li><a class="marker" href="./character.html">Chara<span>公約・キャラクター</span></a></li>
+                        <li><a class="marker" href="./character.php">Chara<span>公約・キャラクター</span></a></li>
                     </ul>
                 </nav>
                 <p class="vote">
@@ -38,6 +38,7 @@
                 </p>
             </div>
         </header>
+
         <main>
             <!-- Swiper -->
             <div class="swiper">
@@ -92,7 +93,11 @@
                 <div class="swiper-button-prev opacity_up"></div>
                 <div class="swiper-button-next opacity_up"></div>
             </div><!-- /swiper -->
+            <div class="character">
+                <img class="character-img" src="images/vote/character/character1.png" alt="キャラクター画像">
+            </div>
         </main>
+
         <footer>
             <div class="footer-inner">
                 <div class="footer-logo">
@@ -101,7 +106,7 @@
                 <div class="footer-nav">
                     <ul>
                         <li><a class="underline" href="index.php#about">本展示について</a></li>
-                        <li><a class="underline" href="character.html">公約・キャラクター</a></li>
+                        <li><a class="underline" href="character.php">公約・キャラクター</a></li>
                         <li><a class="underline" href="">最新情報</a></li>
                     </ul>
                 </div>
