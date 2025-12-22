@@ -1,6 +1,6 @@
 @use "_variable.scss" as *;
 
-.btn_mainColor{
+.btn-main-color{
     text-align: center;
     padding: 0.8em 1em;
     color: $White;
@@ -8,7 +8,7 @@
     background-color: $Color1;
     border-radius: 25px;
 }
-.btn_white {
+.btn-white {
     text-align: center;
     padding: 0.8em 1em;
     color: $Color1;

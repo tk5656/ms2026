@@ -1,5 +1,5 @@
 // Swiper初期化
-const mySwiper = new Swiper('.swiper', {
+const mySwiper = new Swiper(".swiper", {
     centeredSlides: true,
     slidesPerView: 1.3,
     spaceBetween: 16,
@@ -7,8 +7,8 @@ const mySwiper = new Swiper('.swiper', {
     loopAdditionalSlides: 1,
     grabCursor: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     breakpoints: {
       600: {

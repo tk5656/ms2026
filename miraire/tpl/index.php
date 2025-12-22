@@ -9,8 +9,8 @@
     <!-- Adobe fonts -->
      <script src="./js/Adobe_fonts.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="css/page/index/index.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/style.css?v=1.0.0">
+    <link rel="stylesheet" href="css/page/index/index.css?v=1.0.0">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -18,7 +18,7 @@
     <header>
         <div class="header-inner">
             <h1>
-                <a href="./index.php"><img class="logo rotate_10" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
+                <a href="./index.php"><img class="logo rotate-10" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
             </h1>
             <nav>
                 <ul>
@@ -41,12 +41,12 @@
         <section id="about" class="about">
             <div class="text-area">
                 <h2><img src="images/top_about.png" alt=""></h2>
-                <p class="catchcopy">投票体験そのものを<br>今よりもっと楽しく。</p>
+                <p class="catch-copy">投票体験そのものを<br>今よりもっと楽しく。</p>
                 <p class="text">
                     各公約ごとに個性溢れるキャラクターたちが登場し、あなたの投票体験をより楽しいものにします。<br>
                     また、投票ごとに選んだ公約の建物の様子が変化し、一票の大切さをより実感できる展示となっています。
                 </p>
-                <p class="link opacity_down"><a href="./character.php">公約・キャラクターを見る</a></p>
+                <p class="link opacity-down"><a href="./character.php">公約・キャラクターを見る</a></p>
             </div>
         </section>
 
@@ -68,14 +68,14 @@
                     <p>一票を投じるごとに、<br>様々な形でアイソメが変化し、<br>未来の姿に近づいていきます。</p>
                 </div>
             </div>
-            <p class="link opacity_down"><a href="">現在の投票状況</a></p>
+            <p class="link opacity-down"><a href="">現在の投票状況</a></p>
         </section>
     </main>
 
     <footer>
         <div class="footer-inner">
             <div class="footer-logo">
-                <img class="logo" src="./images/hooter_logo.png" alt="">
+                <img class="logo" src="./images/footer_logo.png" alt="">
             </div>
             <div class="footer-nav">
                 <ul>
@@ -85,7 +85,7 @@
                 </ul>
             </div>
             <div class="sns-link">
-                <img class="sns" src="./images/hooter_SNS.png" alt="">
+                <img class="sns" src="./images/footer_SNS.png" alt="">
             </div>
         </div>
     </footer>

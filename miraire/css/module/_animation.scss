@@ -1,38 +1,38 @@
 @use "_variable.scss" as *;
 
 // 薄 → 濃
-.opacity_up{
+.opacity-up{
     opacity: 0.5;
     transition: 0.3s;
 }
-.opacity_up:hover{
+.opacity-up:hover{
     opacity: 1;
 }
 
 // 濃 → 薄
-.opacity_down{
+.opacity-down{
     opacity: 1;
     transition: 0.3s;
 }
-.opacity_down:hover{
+.opacity-down:hover{
     opacity: 0.5;
 }
 
 // 暗 → 明
-.brightness_up{
+.brightness-up{
     filter: brightness(90%);
     transition: 0.3s;
 }
-.brightness_up:hover{
+.brightness-up:hover{
     filter: brightness(100%);
 }
 
 // 明 → 暗
-.brightness_down{
+.brightness-down{
     filter: brightness(100%);
     transition: 0.3s;
 }
-.brightness_down:hover{
+.brightness-down:hover{
     filter: brightness(90%);
 }
 
@@ -64,11 +64,11 @@
     }
 
 // 10度回転
-.rotate_10{
+.rotate-10{
     transform: rotate(0deg);
     transition: 0.3s;
 }
-.rotate_10:hover{
+.rotate-10:hover{
     transform: rotate(-10deg);
 }
 

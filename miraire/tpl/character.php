@@ -13,17 +13,21 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b7038e28dd.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="css/page/character/character.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/style.css?v=1.0.0">
+    <link rel="stylesheet" href="css/page/character/character.css?v=1.0.0">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <!-- JS -->
+    <script src="./js/swiper_character.js" defer></script>
 </head>  
 <body>
     <div id="container">
         <header>
             <div class="header-inner">
                 <h1>
-                    <a href="./index.php"><img class="logo rotate_10" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
+                    <a href="./index.php"><img class="logo rotate-10" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
                 </h1>
                 <nav>
                     <ul>
@@ -42,37 +46,37 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slide_item slide_item1">
+                        <div class="slide-item slide-item1">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide_item slide_item2">
+                        <div class="slide-item slide-item2">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide_item slide_item3">
+                        <div class="slide-item slide-item3">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide_item slide_item4">
+                        <div class="slide-item slide-item4">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide_item slide_item5">
+                        <div class="slide-item slide-item5">
                         </div>
                     </div>
                 </div><!-- /swiper-wrapper -->  
                 <!-- navigation buttons -->
-                <div class="btn_wrapper">
-                    <div class="swiper-button-prev opacity_up"><i class="fa-solid fa-caret-left"></i></div>
-                    <div class="swiper-button-next opacity_up"><i class="fa-solid fa-caret-right"></i></div>
+                <div class="btn-wrapper">
+                    <div class="swiper-button-prev opacity-up"><i class="fa-solid fa-caret-left"></i></div>
+                    <div class="swiper-button-next opacity-up"><i class="fa-solid fa-caret-right"></i></div>
                 </div>
             </div><!-- /swiper -->
         </main>
         <footer>
             <div class="footer-inner">
                 <div class="footer-logo">
-                    <img class="logo" src="./images/hooter_logo.png" alt="">
+                    <img class="logo" src="./images/footer_logo.png" alt="">
                 </div>
                 <div class="footer-nav">
                     <ul>
@@ -82,16 +86,11 @@
                     </ul>
                 </div>
                 <div class="sns-link">
-                    <img class="sns" src="./images/hooter_SNS.png" alt="">
+                    <img class="sns" src="./images/footer_SNS.png" alt="">
                 </div>
             </div>
         </footer>
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- JS -->
-    <script src="./js/swiper_character.js"></script>
 
 </body>
 </html>

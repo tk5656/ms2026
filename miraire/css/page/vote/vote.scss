@@ -24,7 +24,7 @@ main{
     height: 100%;
 }
 .swiper-slide,
-.slide_item{
+.slide-item{
     width: 100%;
     height: 100%;
 }
@@ -48,23 +48,23 @@ main{
     transition: all 1s ease;
 
     &:not(.swiper-slide-active) {
-        .slide_item {
+        .slide-item {
             pointer-events: none;
             opacity: 0.3;
             scale: 0.7;
 
-            .text_wrapper{
+            .text-wrapper{
                 display: none;
             }
         }
     }
 }
-.slide_item{
+.slide-item{
     img{
         width: 100%;
         height: auto;
     }
-    .text_wrapper{
+    .text-wrapper{
         padding-top: 2rem;
         
         p{
@@ -227,9 +227,6 @@ footer{
     max-width: 500px;
     height: auto;
     background-color: $White;
-    // background-image: url(../../../images/vote/popup_boxonly.svg);
-    // background-size: 100% 100%;
-    // background-repeat: no-repeat;
     padding: 2rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
@@ -288,14 +285,14 @@ footer{
         flex-direction: row;
         justify-content: center;
     }
-    .btn_white {
+    .btn-white {
         width: 100%;
 
         @media (769px <= width) {
             width: fit-content;
         }
     }
-    .btn_mainColor {
+    .btn-main-color {
         width: 100%;
 
         @media (769px <= width) {
@@ -360,7 +357,6 @@ footer{
     object-fit: contain;
     z-index: 2;
     clip-path: inset(0 100% 0 0);
-    -webkit-clip-path: inset(0 100% 0 0);
 }
 
 .vote-parts-image {

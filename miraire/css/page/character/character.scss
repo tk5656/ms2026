@@ -20,29 +20,29 @@ main{
 }
 .swiper-wrapper,
 .swiper-slide,
-.slide_item{
+.slide-item{
     width: 100%;
     height: 100%;
 }
-.slide_item{
+.slide-item{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.slide_item1{
+.slide-item1{
     background-image: url(../../../images/character/chara_penji.png);
 }
-.slide_item2{
+.slide-item2{
     background-image: url(../../../images/character/chara_nyoroaki.png);
 }
-.slide_item3{
+.slide-item3{
     background-image: url(../../../images/character/chara_kokezo.png);
 }
-.slide_item4{
+.slide-item4{
     background-image: url(../../../images/character/chara_ichiro.png);
 }
-.slide_item5{
+.slide-item5{
     background-image: url(../../../images/character/chara_nyamiko.png);
 }
 
@@ -54,7 +54,7 @@ main{
 .swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
     content: ''; 
 }
-.btn_wrapper{
+.btn-wrapper{
     display: block;
     position: absolute;
     bottom: 1rem;

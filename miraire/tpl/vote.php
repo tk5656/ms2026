@@ -13,10 +13,15 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b7038e28dd.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="css/page/vote/vote.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/style.css?v=1.0.0">
+    <link rel="stylesheet" href="css/page/vote/vote.css?v=1.0.0">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <!-- JS -->
+    <script src="./js/swiper_vote.js" defer></script>
+    <script src="./js/vote.js" defer></script>
 </head>
 <body>
 
@@ -24,7 +29,7 @@
         <header>
             <div class="header-inner">
                 <h1>
-                    <a href="./index.php"><img class="logo rotate_10" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
+                    <a href="./index.php"><img class="logo rotate-10" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
                 </h1>
                 <nav>
                     <ul>
@@ -44,54 +49,54 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slide_item slide_item1">
+                        <div class="slide-item slide-item1">
                             <img src="./images/vote/isometric1.png" alt="">
-                            <div class="text_wrapper">
+                            <div class="text-wrapper">
                                 <p>選択中の公約：<br><span>雪原ペン次</span></p>
-                                <button onclick="voteModal(0)" type="button" class="btn_mainColor vote-btn opacity_down">このキャラに投票する</button>
+                                <button onclick="voteModal(0)" type="button" class="btn-main-color vote-btn opacity-down">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide_item slide_item2">
+                        <div class="slide-item slide-item2">
                             <img src="./images/vote/isometric2.png" alt="">
-                            <div class="text_wrapper">
+                            <div class="text-wrapper">
                                 <p>選択中の公約：<br><span>虹宮ニョロ明</span></p>
-                                <button onclick="voteModal(1)" type="button" class="btn_mainColor vote-btn opacity_down">このキャラに投票する</button>
+                                <button onclick="voteModal(1)" type="button" class="btn-main-color vote-btn opacity-down">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide_item slide_item3">
+                        <div class="slide-item slide-item3">
                             <img src="./images/vote/isometric3.png" alt="">
-                            <div class="text_wrapper">
+                            <div class="text-wrapper">
                                 <p>選択中の公約：<br><span>鳥谷コケ蔵</span></p>
-                                <button onclick="voteModal(2)" type="button" class="btn_mainColor vote-btn opacity_down">このキャラに投票する</button>
+                                <button onclick="voteModal(2)" type="button" class="btn-main-color vote-btn opacity-down">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide_item slide_item4">
+                        <div class="slide-item slide-item4">
                             <img src="./images/vote/isometric4.png" alt="">
-                            <div class="text_wrapper">
+                            <div class="text-wrapper">
                                 <p>選択中の公約：<br><span>犬山イチ郎</span></p>
-                                <button onclick="voteModal(3)" type="button" class="btn_mainColor vote-btn opacity_down">このキャラに投票する</button>
+                                <button onclick="voteModal(3)" type="button" class="btn-main-color vote-btn opacity-down">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide_item slide_item5">
+                        <div class="slide-item slide-item5">
                             <img src="./images/vote/isometric5.png" alt="">
-                            <div class="text_wrapper">
+                            <div class="text-wrapper">
                                 <p>選択中の公約：<br><span>猫川ニャミ子</span></p>
-                                <button onclick="voteModal(4)" type="button" class="btn_mainColor vote-btn opacity_down">このキャラに投票する</button>
+                                <button onclick="voteModal(4)" type="button" class="btn-main-color vote-btn opacity-down">このキャラに投票する</button>
                             </div>
                         </div>
                     </div>
                 </div><!-- /swiper-wrapper -->  
                 <!-- navigation buttons --> 
-                <div class="swiper-button-prev opacity_up"></div>
-                <div class="swiper-button-next opacity_up"></div>
+                <div class="swiper-button-prev opacity-up"></div>
+                <div class="swiper-button-next opacity-up"></div>
             </div><!-- /swiper -->
             <div class="character">
                 <img class="character-img" src="images/vote/character/character1.png" alt="キャラクター画像">
@@ -101,7 +106,7 @@
         <footer>
             <div class="footer-inner">
                 <div class="footer-logo">
-                    <img class="logo" src="./images/hooter_logo.png" alt="">
+                    <img class="logo" src="./images/footer_logo.png" alt="">
                 </div>
                 <div class="footer-nav">
                     <ul>
@@ -111,7 +116,7 @@
                     </ul>
                 </div>
                 <div class="sns-link">
-                    <img class="sns" src="./images/hooter_SNS.png" alt="">
+                    <img class="sns" src="./images/footer_SNS.png" alt="">
                 </div>
             </div>
         </footer>
@@ -130,9 +135,9 @@
                 <div class="modal-buttons">
                     <form id="voteForm" method="post">
                         <input type="hidden" name="characterNum" id="characterNum" value="キャラクターナンバー">
-                        <button type="submit" class="btn_mainColor opacity_down" id="confirmVoteBtn">投票する</button>
+                        <button type="submit" class="btn-main-color opacity-down" id="confirmVoteBtn">投票する</button>
                     </form>
-                    <button type="button" class="btn_white opacity_down" id="cancelVoteBtn">選びなおす</button>
+                    <button type="button" class="btn-white opacity-down" id="cancelVoteBtn">選びなおす</button>
                 </div>
             </div>
         </div>
@@ -161,12 +166,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- JS -->
-    <script src="./js/swiper_vote.js"></script>
-    <script src="./js/vote.js"></script>
 
 </body>
 </html>

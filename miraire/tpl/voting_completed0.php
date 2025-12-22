@@ -7,10 +7,10 @@
     <!-- destyle CSS -->
     <link rel="stylesheet" href="css/destyle.css">
     <!-- Adobe fonts -->
-     <script src="./js/Adobe_fonts.js"></script>
+    <script src="./js/Adobe_fonts.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="css/page/voting_completed/voting_completed.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/style.css?v=1.0.0">
+    <link rel="stylesheet" href="css/page/voting_completed/voting_completed.css?v=1.0.0">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -18,7 +18,7 @@
     <header>
         <div class="header-inner">
             <h1>
-                <a href="./index.php"><img class="logo rotate_10" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
+                <a href="./index.php"><img class="logo rotate-10" src="./images/header_logo.svg" alt="ミライレのロゴ"></a>
             </h1>
             <nav>
                 <ul>
@@ -61,7 +61,7 @@
                     <p class="add-wallet"><a href="">投票済証をウォレットに追加する</a></p>
                     <div class="sns-contents">
                         <p class="text">投票完了証明を<br>SNSでシェアしよう！</p>
-                        <p class="X-link"><a href="">Xでポストする</a></p>
+                        <p class="x-link"><a href="">Xでポストする</a></p>
                         <p class="instagram-link"><a href="">ストーリーズに追加する</a></p>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
     <footer>
         <div class="footer-inner">
             <div class="footer-logo">
-                <img class="logo" src="./images/hooter_logo.png" alt="">
+                <img class="logo" src="./images/footer_logo.png" alt="">
             </div>
             <ul>
                 <li><a class="underline" href="index.php#about">本展示について</a></li>
@@ -79,7 +79,7 @@
                 <li><a class="underline" href="">最新情報</a></li>
             </ul>
             <div class="sns-link">
-                <img class="sns" src="./images/hooter_SNS.png" alt="">
+                <img class="sns" src="./images/footer_SNS.png" alt="">
             </div>
         </div>
     </footer>

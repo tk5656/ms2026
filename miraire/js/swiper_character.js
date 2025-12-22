@@ -1,5 +1,5 @@
 // Swiper初期化
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".swiper", {
     centeredSlides: true,
     loop: true,
     slidesPerView: 1, // 1つのスライドを全画面表示
@@ -7,7 +7,7 @@ const swiper = new Swiper('.swiper', {
     loopAdditionalSlides: 2,
     // Navigation button
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
