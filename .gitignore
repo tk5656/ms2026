@@ -117,3 +117,12 @@ coverage/
 *.tar
 *.tar.gz
 *.rar
+
+# ============================================
+# 画像フォルダ
+# ============================================
+# すべてのimagesフォルダを除外（ms2026直下のimagesは例外）
+miraire/images/
+infographic/images/
+# isometricフォルダも除外
+isometric/
