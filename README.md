@@ -26,7 +26,7 @@ commit履歴には作業ログがそのまま残っています。
 ### トップページ
 ![トップページ画面](images/screenshot/top.png)
 
-### 投票の流れを示したインフォグラフィック
+### 現在の投票状況を示したインフォグラフィック
 ![インフォグラフィック画面](images/screenshot/infographic.png)
 
 ---
